@@ -1,0 +1,578 @@
+{
+  "generatedAt": "2026-10-04T23:51:57.831Z",
+  "handle": "brgjr10",
+  "tokenKind": "oauth",
+  "commitsScopedToThisRepo": false,
+  "profile": {
+    "login": "brgjr10",
+    "name": "Brodie Grant",
+    "location": "Ohio, US",
+    "bio": "Full-Stack Developer & Operations Automation Engineer",
+    "blog": "https://brgjr10.github.io/",
+    "avatar": "https://avatars.githubusercontent.com/u/232129234?v=4",
+    "createdAt": "2025-09-13T23:57:15Z",
+    "followers": 1,
+    "following": 0,
+    "publicRepos": 28
+  },
+  "totals": {
+    "publicRepos": 28,
+    "ownedRepos": 28,
+    "commits": 702,
+    "stars": 3,
+    "starRepos": [
+      "satellite-app",
+      "custom-dashboard",
+      "Zima-MCP"
+    ],
+    "languages": 10,
+    "lastPush": "2026-10-04T22:40:40Z",
+    "activeThisMonth": 115,
+    "peakMonth": "2026-08",
+    "peakMonthCommits": 264
+  },
+  "languages": [
+    {
+      "name": "HTML",
+      "bytes": 23147594,
+      "pct": 89
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 1589711,
+      "pct": 6.1
+    },
+    {
+      "name": "Python",
+      "bytes": 542637,
+      "pct": 2.1
+    },
+    {
+      "name": "CSS",
+      "bytes": 433757,
+      "pct": 1.7
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 250332,
+      "pct": 1
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 22399,
+      "pct": 0.1
+    },
+    {
+      "name": "Rust",
+      "bytes": 16537,
+      "pct": 0.1
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 8206,
+      "pct": 0
+    },
+    {
+      "name": "Batchfile",
+      "bytes": 1090,
+      "pct": 0
+    },
+    {
+      "name": "Shell",
+      "bytes": 276,
+      "pct": 0
+    }
+  ],
+  "activity": {
+    "weeks": [
+      {
+        "end": "2026-06-21",
+        "count": 0
+      },
+      {
+        "end": "2026-06-28",
+        "count": 0
+      },
+      {
+        "end": "2026-07-05",
+        "count": 0
+      },
+      {
+        "end": "2026-07-12",
+        "count": 0
+      },
+      {
+        "end": "2026-07-19",
+        "count": 22
+      },
+      {
+        "end": "2026-07-26",
+        "count": 12
+      },
+      {
+        "end": "2026-08-02",
+        "count": 41
+      },
+      {
+        "end": "2026-08-09",
+        "count": 19
+      },
+      {
+        "end": "2026-08-16",
+        "count": 100
+      },
+      {
+        "end": "2026-08-23",
+        "count": 24
+      },
+      {
+        "end": "2026-08-30",
+        "count": 80
+      },
+      {
+        "end": "2026-09-06",
+        "count": 0
+      },
+      {
+        "end": "2026-09-13",
+        "count": 58
+      },
+      {
+        "end": "2026-09-20",
+        "count": 5
+      },
+      {
+        "end": "2026-09-27",
+        "count": 79
+      },
+      {
+        "end": "2026-10-04",
+        "count": 168
+      }
+    ],
+    "months": [
+      {
+        "month": "2025-09",
+        "count": 0
+      },
+      {
+        "month": "2025-10",
+        "count": 0
+      },
+      {
+        "month": "2025-11",
+        "count": 0
+      },
+      {
+        "month": "2025-12",
+        "count": 0
+      },
+      {
+        "month": "2026-01",
+        "count": 0
+      },
+      {
+        "month": "2026-02",
+        "count": 0
+      },
+      {
+        "month": "2026-03",
+        "count": 0
+      },
+      {
+        "month": "2026-04",
+        "count": 0
+      },
+      {
+        "month": "2026-05",
+        "count": 94
+      },
+      {
+        "month": "2026-06",
+        "count": 0
+      },
+      {
+        "month": "2026-07",
+        "count": 34
+      },
+      {
+        "month": "2026-08",
+        "count": 264
+      },
+      {
+        "month": "2026-09",
+        "count": 195
+      },
+      {
+        "month": "2026-10",
+        "count": 115
+      }
+    ]
+  },
+  "repos": [
+    {
+      "name": "satellite-app",
+      "description": "A futuristic 3D globe visualization combining live traffic cameras, CCTV feeds, Flock ALPR locations, police tracking, and crime data.",
+      "language": "CSS",
+      "stars": 1,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:39Z",
+      "pushedAt": "2026-10-04T16:27:24Z",
+      "url": "https://github.com/brgjr10/satellite-app",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "custom-dashboard",
+      "description": "Home server dashboard with modular widgets",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-19T14:04:42Z",
+      "pushedAt": "2026-10-04T16:24:07Z",
+      "url": "https://github.com/brgjr10/custom-dashboard",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "Zima-MCP",
+      "description": "Zima Terminal MCP — MCP server providing SSH terminal access to ZimaOS.",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:52Z",
+      "pushedAt": "2026-08-25T17:01:08Z",
+      "url": "https://github.com/brgjr10/Zima-MCP",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "brgjr10",
+      "description": "",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-04T22:40:40Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "SparrowCord",
+      "description": "Discord notifications for SparrowMap — when a new public sighting is published inside a radius you choose, the photo and the location land in a Discord channel.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T16:15:00Z",
+      "pushedAt": "2026-10-04T21:34:01Z",
+      "url": "https://github.com/brgjr10/SparrowCord",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "issuez",
+      "description": "The quick start, full account based GitHub Issue dashboard. ",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-24T20:11:05Z",
+      "pushedAt": "2026-10-04T21:27:44Z",
+      "url": "https://github.com/brgjr10/issuez",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "youtube-deskop",
+      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T18:37:02Z",
+      "pushedAt": "2026-10-04T21:11:08Z",
+      "url": "https://github.com/brgjr10/youtube-deskop",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "kilo-agent-mgr",
+      "description": "A reskinned dashboard for Kilo Code that shows every agent working right now side by side, plus the subagent task tree and overall task completion.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T04:04:01Z",
+      "pushedAt": "2026-10-04T20:45:39Z",
+      "url": "https://github.com/brgjr10/kilo-agent-mgr",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "watch-later",
+      "description": "A stream watchlist management application deployed to Vercel. Both user authentication and the watchlist database are handled by Firebase.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-05-11T13:27:05Z",
+      "pushedAt": "2026-10-04T16:29:15Z",
+      "url": "https://github.com/brgjr10/watch-later",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "odot-dashboard",
+      "description": "Interactive dashboard for ODOT cameras, Weather, Pain/migraine + driving risk summaries, and Traffic alerts.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:35Z",
+      "pushedAt": "2026-10-04T16:28:45Z",
+      "url": "https://github.com/brgjr10/odot-dashboard",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "PatrolTube",
+      "description": "FastAPI + yt-dlp web app for searching and displaying Ohio police bodycam and dashcam videos from YouTube. Deployed via Docker at port 8001.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-01T23:23:08Z",
+      "pushedAt": "2026-10-04T16:28:05Z",
+      "url": "https://github.com/brgjr10/PatrolTube",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "SpotifyConnectLocal",
+      "description": "Script to authenticate with Spotify locally and build playlists from a song list.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:41Z",
+      "pushedAt": "2026-10-04T16:25:38Z",
+      "url": "https://github.com/brgjr10/SpotifyConnectLocal",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "pit-tv",
+      "description": "A single-page archive for live concert video. Browse it four ways, and just press play.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-09-28T19:42:55Z",
+      "pushedAt": "2026-10-04T16:20:56Z",
+      "url": "https://github.com/brgjr10/pit-tv",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "daily-standup",
+      "description": "",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T13:53:56Z",
+      "pushedAt": "2026-10-04T13:57:09Z",
+      "url": "https://github.com/brgjr10/daily-standup",
+      "private": true,
+      "archived": false
+    },
+    {
+      "name": "gitphoto",
+      "description": "Service that renders a cover photo for any GitHub repo using metadata from the GitHub API.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-09-30T02:54:47Z",
+      "pushedAt": "2026-10-01T23:46:13Z",
+      "url": "https://github.com/brgjr10/gitphoto",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "second_brain",
+      "description": "Brodie Grant's personal knowledge base; a centralized wiki for credentials, engineering standards, infrastructure runbooks, and personal notes with an included MCP server that gives AI agents access. No git clone. No local storage. Just token + repo name.",
+      "language": "PowerShell",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-03T05:59:26Z",
+      "pushedAt": "2026-10-01T22:43:31Z",
+      "url": "https://github.com/brgjr10/second_brain",
+      "private": true,
+      "archived": false
+    },
+    {
+      "name": "drawpyo",
+      "description": "Visual project planning and diagramming tool built with Electron, React, and Konva",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-23T15:12:31Z",
+      "pushedAt": "2026-10-01T10:17:26Z",
+      "url": "https://github.com/brgjr10/drawpyo",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "DeadVisionAi",
+      "description": "Full-stack AI platform combining local inference, vector search, and intelligent routing.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:17Z",
+      "pushedAt": "2026-08-25T17:01:34Z",
+      "url": "https://github.com/brgjr10/DeadVisionAi",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "coil-calculator",
+      "description": "Coil Calculator with extensive testing scaffolding.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:33Z",
+      "pushedAt": "2026-08-25T17:01:29Z",
+      "url": "https://github.com/brgjr10/coil-calculator",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "FactorApp",
+      "description": "An Electron desktop app for Windows that loads your Factor 75 weekly delivery and lets you check off meals you've eaten.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:23Z",
+      "pushedAt": "2026-08-25T17:01:25Z",
+      "url": "https://github.com/brgjr10/FactorApp",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "Grocery_List",
+      "description": "Simple grocery list web app.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:26Z",
+      "pushedAt": "2026-08-25T17:01:21Z",
+      "url": "https://github.com/brgjr10/Grocery_List",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "WFProfileManager",
+      "description": "Analyze your profile.json and discover what to do today.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:48Z",
+      "pushedAt": "2026-08-25T17:01:03Z",
+      "url": "https://github.com/brgjr10/WFProfileManager",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "WFProj",
+      "description": "Warframe Part Tracker — interactive tracker with live market data.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:50Z",
+      "pushedAt": "2026-08-25T17:00:59Z",
+      "url": "https://github.com/brgjr10/WFProj",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "tampermonkey-scripts",
+      "description": "My personal-use collection of Tampermonkey userscripts.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:45Z",
+      "pushedAt": "2026-08-25T17:00:33Z",
+      "url": "https://github.com/brgjr10/tampermonkey-scripts",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "strudel-ui",
+      "description": "Quick reference / cheatsheet UI for the Strudel live-coding music platform.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:43Z",
+      "pushedAt": "2026-08-25T17:00:28Z",
+      "url": "https://github.com/brgjr10/strudel-ui",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "radioapp",
+      "description": "OpenMHz radio scanner activity monitor and audio streaming app. Built for trunked radio systems with talkgroup filtering, history browsing, map plotting, and Web Audio EQ.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:37Z",
+      "pushedAt": "2026-08-25T17:00:14Z",
+      "url": "https://github.com/brgjr10/radioapp",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "ModelRouter",
+      "description": "High-performance LLM model proxy and API router with multi-provider support.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:31Z",
+      "pushedAt": "2026-08-25T17:00:08Z",
+      "url": "https://github.com/brgjr10/ModelRouter",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "brgjr10.github.io",
+      "description": "Personal Interactive Portfolio",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-15T23:52:00Z",
+      "pushedAt": "2026-08-21T00:35:07Z",
+      "url": "https://github.com/brgjr10/brgjr10.github.io",
+      "private": false,
+      "archived": false
+    }
+  ]
+}

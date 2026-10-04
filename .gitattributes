@@ -1,0 +1,11 @@
+# Generated content must be byte-identical everywhere, or the sync workflow sees
+# a change on every run purely from line endings and rewrites all 24 cards for
+# nothing. Force LF in the working tree and in the index.
+* text=auto eol=lf
+
+*.svg text eol=lf
+*.md text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.html text eol=lf

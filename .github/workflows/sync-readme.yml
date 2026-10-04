@@ -1,0 +1,115 @@
+# Keeps the profile README honest.
+#
+# Every commit to this repo — and every 6 hours regardless — refetches the
+# account from the GitHub API, regenerates the cards, rewrites the README, and
+# commits the result if anything moved. Nothing on a card is typed by hand, so
+# this is the only thing that has to run for the profile to stay current.
+#
+# Setup (once):
+#   Settings -> Secrets -> Actions -> New repository secret
+#   name  PROFILE_TOKEN
+#   value a classic personal access token with scopes `public_repo` + `read:user`
+#
+# The token has to be a PAT rather than the built-in GITHUB_TOKEN because the
+# built-in one is scoped to this repository alone, and search/commits would then
+# only count commits here. Without it the workflow still runs, but every commit
+# count on the cards reads too low; sync.mjs warns loudly when that happens.
+
+name: sync readme
+
+on:
+  push:
+    branches: [main]
+    # The bot's own commits already skip this workflow, and ignoring the
+    # generated paths keeps a manual card edit from ping-ponging.
+    paths-ignore:
+      - README.md
+      - assets/**
+  schedule:
+    # GitHub runs these on the hour at a jittered minute; 23 past is a low-traffic
+    # slot and still lands on all six hours.
+    - cron: '7 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [readme-sync]
+  # Lets any other repo refresh this profile on its own commits:
+  #   uses: brgjr10/brgjr10/.github/workflows/sync-readme.yml@main
+  # See notify-profile.yml for a copy-paste caller.
+  workflow_call:
+
+permissions:
+  contents: write
+
+# One run at a time. Two overlapping runs would race on the same files and the
+# second commit would contain the other's partial output.
+concurrency:
+  group: sync-readme
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch live account data
+        env:
+          # PROFILE_TOKEN gives account-wide commit counts; GITHUB_TOKEN is the
+          # fallback so the workflow still runs on a fresh clone with no secrets.
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node sync.mjs
+
+      - name: Generate cards
+        run: node build.mjs
+
+      - name: Generate README
+        run: node readme.mjs
+
+      # Fails the run on theme drift, layout overflow, a number that is not
+      # traceable to the API, or a card that no longer matches its source SVG.
+      - name: Verify
+        run: node verify.mjs
+
+      - name: Report what changed
+        id: diff
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "README already matches the GitHub API."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "---" >> "$GITHUB_STEP_SUMMARY"
+            echo "### README sync" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            git diff --cached --stat >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit the regenerated cards
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # The snapshot date is the first line of the diff, so use it as the
+          # message — it reads better in the history than a generic string.
+          STAMP=$(node -e "console.log(require('./data.live.json').generatedAt.slice(0, 16).replace('T', ' '))")
+          git commit -m "sync readme from github api (${STAMP}) [skip ci]"
+          git push
+
+      - name: Fail if the token made the counts unreliable
+        if: always()
+        run: |
+          if [ -f data.live.json ]; then
+            SCOPED=$(node -e "console.log(require('./data.live.json').commitsScopedToThisRepo)")
+            COMMITS=$(node -e "console.log(require('./data.live.json').totals.commits)")
+            echo "commits=${COMMITS} scoped=${SCOPED}" >> "$GITHUB_STEP_SUMMARY"
+            if [ "$SCOPED" = "true" ]; then
+              echo "::warning::Commit counts are limited to this repository. Add a PROFILE_TOKEN secret (classic PAT: public_repo + read:user) for account-wide numbers."
+            fi
+          fi

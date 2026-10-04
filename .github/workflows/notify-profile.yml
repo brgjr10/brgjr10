@@ -1,0 +1,45 @@
+# Copy this file into any repo that should refresh the profile README when it
+# gets a commit. It is a thin caller — the actual work lives in the profile repo
+# so there is only one copy to maintain.
+#
+# Setup in the calling repo:
+#   Settings -> Secrets and variables -> Actions -> New repository secret
+#   name  PAT
+#   value a classic personal access token with scope `public_repo`
+#
+#   The profile repo must also have its own PROFILE_TOKEN secret (see
+#   sync-readme.yml) or the commit counts it publishes will be low.
+#
+# Not every repo needs this. It matters for repos that change the picture —
+# a new repo, a new language, a star. A docs or dotfiles repo does not need it.
+
+name: notify profile readme
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - docs/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    # The point of this workflow is the side effect, not its own result, so it
+    # must not block on the profile repo's queue.
+    timeout-minutes: 5
+    steps:
+      - name: Trigger the profile sync
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'brgjr10',
+              repo: 'brgjr10',
+              workflow_id: 'sync-readme.yml',
+              ref: 'main'
+            });
