@@ -38,12 +38,7 @@ const embed = (name) => {
 
 // Only the live-derived parts of the badge row; the rest is static positioning.
 const badge = (label, href, { fill = 'ffffff', logo = '', logoColor = '000000' } = {}) => {
-  const params = new URLSearchParams({
-    label,
-    style: 'flat-square',
-    color: fill,
-    t: D.snapshot.taken.replace(/-/g, '')
-  });
+  const params = new URLSearchParams({ label, style: 'flat-square', color: fill });
   if (logo) {
     params.set('logo', logo);
     params.set('logoColor', logoColor);
