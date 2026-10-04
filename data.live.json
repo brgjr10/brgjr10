@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-04T23:51:57.831Z",
+  "generatedAt": "2026-10-04T23:57:49.858Z",
   "handle": "brgjr10",
-  "tokenKind": "oauth",
+  "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
   "profile": {
     "login": "brgjr10",
@@ -17,8 +17,8 @@
   },
   "totals": {
     "publicRepos": 28,
-    "ownedRepos": 28,
-    "commits": 702,
+    "ownedRepos": 26,
+    "commits": 412,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,25 +26,25 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-04T22:40:40Z",
-    "activeThisMonth": 115,
+    "lastPush": "2026-10-04T23:56:31Z",
+    "activeThisMonth": 88,
     "peakMonth": "2026-08",
-    "peakMonthCommits": 264
+    "peakMonthCommits": 144
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23147594,
+      "bytes": 23149182,
       "pct": 89
     },
     {
       "name": "JavaScript",
-      "bytes": 1589711,
-      "pct": 6.1
+      "bytes": 1617563,
+      "pct": 6.2
     },
     {
       "name": "Python",
-      "bytes": 542637,
+      "bytes": 533456,
       "pct": 2.1
     },
     {
@@ -58,11 +58,6 @@
       "pct": 1
     },
     {
-      "name": "PowerShell",
-      "bytes": 22399,
-      "pct": 0.1
-    },
-    {
       "name": "Rust",
       "bytes": 16537,
       "pct": 0.1
@@ -70,6 +65,11 @@
     {
       "name": "Dockerfile",
       "bytes": 8206,
+      "pct": 0
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 5888,
       "pct": 0
     },
     {
@@ -115,15 +115,15 @@
       },
       {
         "end": "2026-08-09",
-        "count": 19
+        "count": 0
       },
       {
         "end": "2026-08-16",
-        "count": 100
+        "count": 3
       },
       {
         "end": "2026-08-23",
-        "count": 24
+        "count": 20
       },
       {
         "end": "2026-08-30",
@@ -135,19 +135,19 @@
       },
       {
         "end": "2026-09-13",
-        "count": 58
+        "count": 0
       },
       {
         "end": "2026-09-20",
-        "count": 5
+        "count": 0
       },
       {
         "end": "2026-09-27",
-        "count": 79
+        "count": 0
       },
       {
         "end": "2026-10-04",
-        "count": 168
+        "count": 141
       }
     ],
     "months": [
@@ -197,15 +197,15 @@
       },
       {
         "month": "2026-08",
-        "count": 264
+        "count": 144
       },
       {
         "month": "2026-09",
-        "count": 195
+        "count": 53
       },
       {
         "month": "2026-10",
-        "count": 115
+        "count": 88
       }
     ]
   },
@@ -252,12 +252,12 @@
     {
       "name": "brgjr10",
       "description": "",
-      "language": "",
+      "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-04T22:40:40Z",
+      "pushedAt": "2026-10-04T23:56:31Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
@@ -380,19 +380,6 @@
       "archived": false
     },
     {
-      "name": "daily-standup",
-      "description": "",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T13:53:56Z",
-      "pushedAt": "2026-10-04T13:57:09Z",
-      "url": "https://github.com/brgjr10/daily-standup",
-      "private": true,
-      "archived": false
-    },
-    {
       "name": "gitphoto",
       "description": "Service that renders a cover photo for any GitHub repo using metadata from the GitHub API.",
       "language": "JavaScript",
@@ -403,19 +390,6 @@
       "pushedAt": "2026-10-01T23:46:13Z",
       "url": "https://github.com/brgjr10/gitphoto",
       "private": false,
-      "archived": false
-    },
-    {
-      "name": "second_brain",
-      "description": "Brodie Grant's personal knowledge base; a centralized wiki for credentials, engineering standards, infrastructure runbooks, and personal notes with an included MCP server that gives AI agents access. No git clone. No local storage. Just token + repo name.",
-      "language": "PowerShell",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-08-03T05:59:26Z",
-      "pushedAt": "2026-10-01T22:43:31Z",
-      "url": "https://github.com/brgjr10/second_brain",
-      "private": true,
       "archived": false
     },
     {
