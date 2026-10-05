@@ -322,31 +322,21 @@ ok.push('no hand-written availability or service-status claims left on any card'
 // ---------- 7. README wiring ----------
 
 const readme = readFileSync(join(ROOT, 'README.md'), 'utf8');
-const embedded = [...readme.matchAll(/data:image\/svg\+xml;base64,([A-Za-z0-9+/=]+)/g)];
-if (!embedded.length) fail.push('README embeds no generated cards');
-for (const [, b64] of embedded) {
-  try {
-    Buffer.from(b64, 'base64').toString('utf8');
-  } catch {
-    fail.push('README contains a malformed base64 card');
-    break;
-  }
-}
-ok.push(`${embedded.length} cards embedded in README.md`);
+const RAW_BASE = 'https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets';
+if (!readme.includes(RAW_BASE)) fail.push('README does not reference raw asset URLs');
+ok.push('README references raw asset URLs');
 
 for (const card of CARDS) {
-  const lightSvg = readFileSync(join(ROOT, `assets/${card}.svg`), 'utf8');
-  if (!readme.includes(Buffer.from(lightSvg, 'utf8').toString('base64'))) {
-    fail.push(`assets/${card}.svg is not embedded in README.md — run node readme.mjs`);
+  if (!readme.includes(`${RAW_BASE}/${card}.svg`)) {
+    fail.push(`assets/${card}.svg is not referenced in README.md`);
   }
 }
 for (const sec of SECTIONS) {
-  const svg = readFileSync(join(ROOT, `assets/${sec}.svg`), 'utf8');
-  if (!readme.includes(Buffer.from(svg, 'utf8').toString('base64'))) {
-    fail.push(`assets/${sec}.svg is not embedded in README.md — run node readme.mjs`);
+  if (!readme.includes(`${RAW_BASE}/${sec}.svg`)) {
+    fail.push(`assets/${sec}.svg is not referenced in README.md`);
   }
 }
-ok.push('every generated card is embedded in README.md');
+ok.push('every generated card is referenced in README.md');
 
 // ---------- report ----------
 

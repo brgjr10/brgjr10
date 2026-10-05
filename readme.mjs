@@ -31,19 +31,22 @@ const altFor = {
   stack: 'languages'
 };
 
+const RAW_BASE = 'https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets';
+
 const embed = (name) => {
-  const svg = readFileSync(join(ROOT, `assets/${name}.svg`), 'utf8');
-  return `![${altFor[name] ?? name}](data:image/svg+xml;base64,${Buffer.from(svg, 'utf8').toString('base64')})`;
+  const url = `${RAW_BASE}/${name}.svg`;
+  return `![${altFor[name] ?? name}](${url})`;
 };
 
 // Only the live-derived parts of the badge row; the rest is static positioning.
 const badge = (label, href, { fill = 'ffffff', logo = '', logoColor = '000000', message = '' } = {}) => {
-  const params = new URLSearchParams({ label, message, color: fill, style: 'flat-square' });
+  const params = new URLSearchParams({ style: 'flat-square' });
   if (logo) {
     params.set('logo', logo);
     params.set('logoColor', logoColor);
   }
-  return `[![${label}](https://img.shields.io/static/v1?${params})](${href})`;
+  const slug = `${label}-${message}-${fill}`;
+  return `[![${label}](https://img.shields.io/badge/${slug}?${params})](${href})`;
 };
 
 const badges = [
