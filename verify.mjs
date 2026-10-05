@@ -326,17 +326,22 @@ const RAW_BASE = 'https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets'
 if (!readme.includes(RAW_BASE)) fail.push('README does not reference raw asset URLs');
 ok.push('README references raw asset URLs');
 
+const pictures = [...readme.matchAll(/<picture>[\s\S]*?<\/picture>/g)];
+if (!pictures.length) fail.push('README contains no <picture> theme-switching elements');
+
 for (const card of CARDS) {
-  if (!readme.includes(`${RAW_BASE}/${card}.svg`)) {
-    fail.push(`assets/${card}.svg is not referenced in README.md`);
-  }
+  const light = `${RAW_BASE}/${card}.svg`;
+  const dark = `${RAW_BASE}/dark/${card}.svg`;
+  if (!readme.includes(light)) fail.push(`light assets/${card}.svg not referenced`);
+  if (!readme.includes(dark)) fail.push(`dark assets/${card}.svg not referenced`);
 }
 for (const sec of SECTIONS) {
-  if (!readme.includes(`${RAW_BASE}/${sec}.svg`)) {
-    fail.push(`assets/${sec}.svg is not referenced in README.md`);
-  }
+  const light = `${RAW_BASE}/${sec}.svg`;
+  const dark = `${RAW_BASE}/dark/${sec}.svg`;
+  if (!readme.includes(light)) fail.push(`light assets/${sec}.svg not referenced`);
+  if (!readme.includes(dark)) fail.push(`dark assets/${sec}.svg not referenced`);
 }
-ok.push('every generated card is referenced in README.md');
+ok.push('every generated card has light and dark references in README.md');
 
 // ---------- report ----------
 

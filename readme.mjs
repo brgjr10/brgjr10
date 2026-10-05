@@ -34,8 +34,10 @@ const altFor = {
 const RAW_BASE = 'https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets';
 
 const embed = (name) => {
-  const url = `${RAW_BASE}/${name}.svg`;
-  return `![${altFor[name] ?? name}](${url})`;
+  const light = `${RAW_BASE}/${name}.svg`;
+  const dark = `${RAW_BASE}/dark/${name}.svg`;
+  const alt = altFor[name] ?? name;
+  return `<picture><source srcset="${dark}" media="(prefers-color-scheme: dark)"><img src="${light}" alt="${alt}"></picture>`;
 };
 
 // Only the live-derived parts of the badge row; the rest is static positioning.
