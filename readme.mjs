@@ -37,21 +37,28 @@ const embed = (name) => {
 };
 
 // Only the live-derived parts of the badge row; the rest is static positioning.
-const badge = (label, href, { fill = 'ffffff', logo = '', logoColor = '000000' } = {}) => {
-  const params = new URLSearchParams({ label, style: 'flat-square', color: fill });
+const badge = (label, href, { fill = 'ffffff', logo = '', logoColor = '000000', message = '' } = {}) => {
+  const params = new URLSearchParams({ label, message, color: fill, style: 'flat-square' });
   if (logo) {
     params.set('logo', logo);
     params.set('logoColor', logoColor);
   }
-  return `[![${label}](https://img.shields.io/badge?${params})](${href})`;
+  return `[![${label}](https://img.shields.io/static/v1?${params})](${href})`;
 };
 
 const badges = [
   badge(D.profile.handle.toUpperCase(), D.profile.portfolio),
-  badge('REPOS', `https://github.com/${D.profile.handle}?tab=repositories`, { logo: 'github' }),
-  badge('FOLLOW', `https://github.com/${D.profile.handle}`, { logo: 'github' }),
+  badge('REPOS', `https://github.com/${D.profile.handle}?tab=repositories`, {
+    logo: 'github',
+    message: String(D.projects.count)
+  }),
+  badge('FOLLOW', `https://github.com/${D.profile.handle}`, {
+    logo: 'github',
+    message: String(D.snapshot.followers)
+  }),
   badge('COMMITS', `https://github.com/${D.profile.handle}/graphs/commit-activity`, {
-    logo: 'git-commit'
+    logo: 'git-commit',
+    message: String(D.snapshot.commits)
   }),
   ...D.stack.rows.slice(0, 4).map((l) =>
     badge(l.label.toUpperCase(), `https://github.com/${D.profile.handle}?tab=repositories`, {
