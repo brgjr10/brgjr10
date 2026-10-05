@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T14:28:46.037Z",
+  "generatedAt": "2026-10-05T21:59:16.458Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -13,12 +13,12 @@
     "createdAt": "2025-09-13T23:57:15Z",
     "followers": 1,
     "following": 0,
-    "publicRepos": 28
+    "publicRepos": 29
   },
   "totals": {
-    "publicRepos": 28,
-    "ownedRepos": 26,
-    "commits": 420,
+    "publicRepos": 29,
+    "ownedRepos": 27,
+    "commits": 434,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,30 +26,30 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-05T05:29:49Z",
-    "activeThisMonth": 95,
+    "lastPush": "2026-10-05T19:23:58Z",
+    "activeThisMonth": 109,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23149103,
-      "pct": 89
+      "bytes": 23149847,
+      "pct": 88.3
     },
     {
       "name": "JavaScript",
-      "bytes": 1617896,
-      "pct": 6.2
+      "bytes": 1789650,
+      "pct": 6.8
     },
     {
       "name": "Python",
-      "bytes": 533456,
+      "bytes": 542637,
       "pct": 2.1
     },
     {
       "name": "CSS",
-      "bytes": 433757,
+      "bytes": 435830,
       "pct": 1.7
     },
     {
@@ -64,12 +64,12 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 8206,
+      "bytes": 9980,
       "pct": 0
     },
     {
       "name": "PowerShell",
-      "bytes": 5888,
+      "bytes": 7371,
       "pct": 0
     },
     {
@@ -147,7 +147,7 @@
       },
       {
         "end": "2026-10-05",
-        "count": 125
+        "count": 139
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 95
+        "count": 109
       }
     ]
   },
@@ -250,15 +250,15 @@
       "archived": false
     },
     {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
+      "name": "issuez",
+      "description": "The quick start, full account based GitHub Issue dashboard. ",
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-05T05:29:49Z",
-      "url": "https://github.com/brgjr10/brgjr10",
+      "createdAt": "2026-08-24T20:11:05Z",
+      "pushedAt": "2026-10-05T19:23:58Z",
+      "url": "https://github.com/brgjr10/issuez",
       "private": false,
       "archived": false
     },
@@ -270,21 +270,8 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T16:15:00Z",
-      "pushedAt": "2026-10-04T21:34:01Z",
+      "pushedAt": "2026-10-05T18:20:03Z",
       "url": "https://github.com/brgjr10/SparrowCord",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "issuez",
-      "description": "The quick start, full account based GitHub Issue dashboard. ",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-08-24T20:11:05Z",
-      "pushedAt": "2026-10-04T21:27:44Z",
-      "url": "https://github.com/brgjr10/issuez",
       "private": false,
       "archived": false
     },
@@ -296,7 +283,7 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-04T21:11:08Z",
+      "pushedAt": "2026-10-05T18:15:53Z",
       "url": "https://github.com/brgjr10/youtube-deskop",
       "private": false,
       "archived": false
@@ -309,8 +296,47 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T04:04:01Z",
-      "pushedAt": "2026-10-04T20:45:39Z",
+      "pushedAt": "2026-10-05T18:15:42Z",
       "url": "https://github.com/brgjr10/kilo-agent-mgr",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "daily-recap-bot",
+      "description": "Automated daily recap of your coding activity, posted to Discord. ",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T13:53:56Z",
+      "pushedAt": "2026-10-05T17:54:39Z",
+      "url": "https://github.com/brgjr10/daily-recap-bot",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "pit-tv",
+      "description": "A single-page archive for live concert video. Browse it four ways, and just press play.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-09-28T19:42:55Z",
+      "pushedAt": "2026-10-05T16:23:35Z",
+      "url": "https://github.com/brgjr10/pit-tv",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-05T14:28:47Z",
+      "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
     },
@@ -363,19 +389,6 @@
       "createdAt": "2026-07-22T15:18:41Z",
       "pushedAt": "2026-10-04T16:25:38Z",
       "url": "https://github.com/brgjr10/SpotifyConnectLocal",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "pit-tv",
-      "description": "A single-page archive for live concert video. Browse it four ways, and just press play.",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-09-28T19:42:55Z",
-      "pushedAt": "2026-10-04T16:20:56Z",
-      "url": "https://github.com/brgjr10/pit-tv",
       "private": false,
       "archived": false
     },
