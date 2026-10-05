@@ -64,12 +64,7 @@ const badges = [
   badge('COMMITS', `https://github.com/${D.profile.handle}/graphs/commit-activity`, {
     logo: 'git-commit',
     message: String(D.snapshot.commits)
-  }),
-  ...D.stack.rows.slice(0, 4).map((l) =>
-    badge(l.label.toUpperCase(), `https://github.com/${D.profile.handle}?tab=repositories`, {
-      fill: '161b22'
-    })
-  )
+  })
 ].join(' ');
 
 const lines = [
