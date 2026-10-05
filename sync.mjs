@@ -46,7 +46,16 @@ async function api(path, params = {}) {
     if (v !== undefined && v !== null) url.searchParams.set(k, String(v));
   }
   for (let attempt = 0; attempt < 4; attempt += 1) {
-    const res = await fetch(url, { headers });
+    let res;
+    try {
+      res = await fetch(url, { headers });
+    } catch (err) {
+      if (attempt === 3) throw err;
+      const wait = 1200 * (attempt + 1);
+      console.warn(`fetch failed for ${url.pathname}${url.search}: ${err.message}; retrying in ${wait}ms`);
+      await new Promise((r) => setTimeout(r, wait));
+      continue;
+    }
     // Secondary rate limits and transient 5xx are worth one more try; a 404 is not.
     if (res.status === 404) return null;
     if (res.status === 403 || res.status === 429 || res.status >= 500) {
