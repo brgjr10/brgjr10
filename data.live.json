@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T10:10:25.039Z",
+  "generatedAt": "2026-10-06T17:10:39.441Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 30,
     "ownedRepos": 28,
-    "commits": 447,
+    "commits": 450,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,8 +26,8 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-06T02:15:51Z",
-    "activeThisMonth": 122,
+    "lastPush": "2026-10-06T14:05:55Z",
+    "activeThisMonth": 125,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
@@ -39,7 +39,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 1792220,
+      "bytes": 1792172,
       "pct": 6.8
     },
     {
@@ -147,7 +147,7 @@
       },
       {
         "end": "2026-10-06",
-        "count": 133
+        "count": 136
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 122
+        "count": 125
       }
     ]
   },
@@ -250,6 +250,19 @@
       "archived": false
     },
     {
+      "name": "youtube-deskop",
+      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T18:37:02Z",
+      "pushedAt": "2026-10-06T14:05:55Z",
+      "url": "https://github.com/brgjr10/youtube-deskop",
+      "private": false,
+      "archived": false
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "JavaScript",
@@ -257,7 +270,7 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-06T02:15:51Z",
+      "pushedAt": "2026-10-06T10:10:26Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
@@ -272,19 +285,6 @@
       "createdAt": "2026-08-23T15:12:31Z",
       "pushedAt": "2026-10-06T01:41:34Z",
       "url": "https://github.com/brgjr10/drawpyo",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "youtube-deskop",
-      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
-      "language": "CSS",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-06T01:33:37Z",
-      "url": "https://github.com/brgjr10/youtube-deskop",
       "private": false,
       "archived": false
     },
