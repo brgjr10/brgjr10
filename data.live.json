@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:59:16.458Z",
+  "generatedAt": "2026-10-06T02:15:50.281Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -13,12 +13,12 @@
     "createdAt": "2025-09-13T23:57:15Z",
     "followers": 1,
     "following": 0,
-    "publicRepos": 29
+    "publicRepos": 30
   },
   "totals": {
-    "publicRepos": 29,
-    "ownedRepos": 27,
-    "commits": 434,
+    "publicRepos": 30,
+    "ownedRepos": 28,
+    "commits": 447,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,8 +26,8 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-05T19:23:58Z",
-    "activeThisMonth": 109,
+    "lastPush": "2026-10-06T01:41:34Z",
+    "activeThisMonth": 122,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
@@ -39,7 +39,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 1789650,
+      "bytes": 1792220,
       "pct": 6.8
     },
     {
@@ -74,7 +74,7 @@
     },
     {
       "name": "Batchfile",
-      "bytes": 1090,
+      "bytes": 3242,
       "pct": 0
     },
     {
@@ -86,68 +86,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-06-22",
+        "end": "2026-06-23",
         "count": 0
       },
       {
-        "end": "2026-06-29",
+        "end": "2026-06-30",
         "count": 0
       },
       {
-        "end": "2026-07-06",
+        "end": "2026-07-07",
         "count": 0
       },
       {
-        "end": "2026-07-13",
+        "end": "2026-07-14",
         "count": 0
       },
       {
-        "end": "2026-07-20",
+        "end": "2026-07-21",
         "count": 22
       },
       {
-        "end": "2026-07-27",
+        "end": "2026-07-28",
         "count": 12
       },
       {
-        "end": "2026-08-03",
+        "end": "2026-08-04",
         "count": 41
       },
       {
-        "end": "2026-08-10",
-        "count": 0
-      },
-      {
-        "end": "2026-08-17",
+        "end": "2026-08-11",
         "count": 3
       },
       {
-        "end": "2026-08-24",
-        "count": 68
-      },
-      {
-        "end": "2026-08-31",
-        "count": 32
-      },
-      {
-        "end": "2026-09-07",
+        "end": "2026-08-18",
         "count": 0
       },
       {
-        "end": "2026-09-14",
+        "end": "2026-08-25",
+        "count": 94
+      },
+      {
+        "end": "2026-09-01",
+        "count": 6
+      },
+      {
+        "end": "2026-09-08",
         "count": 0
       },
       {
-        "end": "2026-09-21",
+        "end": "2026-09-15",
         "count": 0
       },
       {
-        "end": "2026-09-28",
-        "count": 23
+        "end": "2026-09-22",
+        "count": 0
       },
       {
-        "end": "2026-10-05",
-        "count": 139
+        "end": "2026-09-29",
+        "count": 42
+      },
+      {
+        "end": "2026-10-06",
+        "count": 133
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 109
+        "count": 122
       }
     ]
   },
@@ -250,6 +250,84 @@
       "archived": false
     },
     {
+      "name": "drawpyo",
+      "description": "Visual project planning and diagramming tool built with Electron, React, and Konva",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-23T15:12:31Z",
+      "pushedAt": "2026-10-06T01:41:34Z",
+      "url": "https://github.com/brgjr10/drawpyo",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "youtube-deskop",
+      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T18:37:02Z",
+      "pushedAt": "2026-10-06T01:33:37Z",
+      "url": "https://github.com/brgjr10/youtube-deskop",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "kilo-agent-mgr",
+      "description": "A reskinned dashboard for Kilo Code that shows every agent working right now side by side, plus the subagent task tree and overall task completion.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T04:04:01Z",
+      "pushedAt": "2026-10-06T01:21:43Z",
+      "url": "https://github.com/brgjr10/kilo-agent-mgr",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "dev-nuke-windows",
+      "description": "A nuclear option for clearing developer bloat on Windows in one shot.",
+      "language": "Batchfile",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-06T01:00:29Z",
+      "pushedAt": "2026-10-06T01:10:34Z",
+      "url": "https://github.com/brgjr10/dev-nuke-windows",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "gitphoto",
+      "description": "Service that renders a cover photo for any GitHub repo using metadata from the GitHub API.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-09-30T02:54:47Z",
+      "pushedAt": "2026-10-06T00:45:21Z",
+      "url": "https://github.com/brgjr10/gitphoto",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-05T21:59:17Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false
+    },
+    {
       "name": "issuez",
       "description": "The quick start, full account based GitHub Issue dashboard. ",
       "language": "JavaScript",
@@ -276,32 +354,6 @@
       "archived": false
     },
     {
-      "name": "youtube-deskop",
-      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
-      "language": "CSS",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-05T18:15:53Z",
-      "url": "https://github.com/brgjr10/youtube-deskop",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "kilo-agent-mgr",
-      "description": "A reskinned dashboard for Kilo Code that shows every agent working right now side by side, plus the subagent task tree and overall task completion.",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T04:04:01Z",
-      "pushedAt": "2026-10-05T18:15:42Z",
-      "url": "https://github.com/brgjr10/kilo-agent-mgr",
-      "private": false,
-      "archived": false
-    },
-    {
       "name": "daily-recap-bot",
       "description": "Automated daily recap of your coding activity, posted to Discord. ",
       "language": "JavaScript",
@@ -324,19 +376,6 @@
       "createdAt": "2026-09-28T19:42:55Z",
       "pushedAt": "2026-10-05T16:23:35Z",
       "url": "https://github.com/brgjr10/pit-tv",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-05T14:28:47Z",
-      "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
     },
@@ -389,32 +428,6 @@
       "createdAt": "2026-07-22T15:18:41Z",
       "pushedAt": "2026-10-04T16:25:38Z",
       "url": "https://github.com/brgjr10/SpotifyConnectLocal",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "gitphoto",
-      "description": "Service that renders a cover photo for any GitHub repo using metadata from the GitHub API.",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-09-30T02:54:47Z",
-      "pushedAt": "2026-10-01T23:46:13Z",
-      "url": "https://github.com/brgjr10/gitphoto",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "drawpyo",
-      "description": "Visual project planning and diagramming tool built with Electron, React, and Konva",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-08-23T15:12:31Z",
-      "pushedAt": "2026-10-01T10:17:26Z",
-      "url": "https://github.com/brgjr10/drawpyo",
       "private": false,
       "archived": false
     },
