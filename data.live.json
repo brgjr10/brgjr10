@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:15:50.281Z",
+  "generatedAt": "2026-10-06T10:10:25.039Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-06T01:41:34Z",
+    "lastPush": "2026-10-06T02:15:51Z",
     "activeThisMonth": 122,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
@@ -250,6 +250,19 @@
       "archived": false
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-06T02:15:51Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false
+    },
+    {
       "name": "drawpyo",
       "description": "Visual project planning and diagramming tool built with Electron, React, and Konva",
       "language": "TypeScript",
@@ -311,19 +324,6 @@
       "createdAt": "2026-09-30T02:54:47Z",
       "pushedAt": "2026-10-06T00:45:21Z",
       "url": "https://github.com/brgjr10/gitphoto",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-05T21:59:17Z",
-      "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
     },
