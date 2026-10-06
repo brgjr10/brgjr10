@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T17:10:39.441Z",
+  "generatedAt": "2026-10-06T22:38:19.537Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-06T14:05:55Z",
+    "lastPush": "2026-10-06T17:10:40Z",
     "activeThisMonth": 125,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
@@ -250,6 +250,19 @@
       "archived": false
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-06T17:10:40Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false
+    },
+    {
       "name": "youtube-deskop",
       "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
       "language": "CSS",
@@ -259,19 +272,6 @@
       "createdAt": "2026-10-04T18:37:02Z",
       "pushedAt": "2026-10-06T14:05:55Z",
       "url": "https://github.com/brgjr10/youtube-deskop",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-06T10:10:26Z",
-      "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
     },
