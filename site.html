@@ -1355,7 +1355,12 @@ const DATA = /*__PROFILE_DATA__*/null;
   /* ---------- count-up ---------- */
 
   function animateStats() {
-    var nums = $$('[data-count]');
+    // Count up the stat numbers only. The monthly histogram bars
+    // also carry data-count (it feeds their tooltip), so an
+    // unscoped [data-count] selector counts them up too — and
+    // setting textContent on a bar replaces its <i> child, which
+    // wipes the bar from the chart a moment after it renders.
+    var nums = $$('.v[data-count]');
     nums.forEach(function (el) {
       var target = parseInt(el.getAttribute('data-count'), 10) || 0;
       if (reducedMotion) { el.textContent = fmtNum(target); return; }
@@ -1562,7 +1567,7 @@ const DATA = /*__PROFILE_DATA__*/null;
   renderFooter();
   bindEvents();
   if (!reducedMotion) setTimeout(animateStats, 60);
-  else { $$('[data-count]').forEach(function (el) { el.textContent = fmtNum(parseInt(el.getAttribute('data-count'), 10) || 0); }); $$('.tile .bar i').forEach(function (el) { el.style.width = (el.getAttribute('data-w') || '0') + '%'; }); }
+  else { $$('.v[data-count]').forEach(function (el) { el.textContent = fmtNum(parseInt(el.getAttribute('data-count'), 10) || 0); }); $$('.tile .bar i').forEach(function (el) { el.style.width = (el.getAttribute('data-w') || '0') + '%'; }); }
 })();
 </script>
 </body>

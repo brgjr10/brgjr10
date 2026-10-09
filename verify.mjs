@@ -359,6 +359,13 @@ if (!existsSync(sitePath)) {
   if (site.includes('/*__PROFILE_DATA__*/')) fail.push('index.html still has the un-stamped data placeholder');
   if (site.includes('undefined')) fail.push('index.html contains undefined');
   if (site.includes('NaN')) fail.push('index.html contains NaN');
+  // The count-up animation sets textContent on everything it
+  // selects, and the monthly histogram bars carry data-count
+  // (for their tooltip). An unscoped [data-count] selector
+  // therefore counts the bars up too and replaces each bar's
+  // <i> — the chart flashes on and then empties. The selector
+  // must stay scoped to the stat numbers (.v[data-count]).
+  if (site.includes("$$('[data-count]')")) fail.push('index.html count-up selector is unscoped and would wipe the histogram bars');
 
   const stamp = site.match(/const DATA = (\{[\s\S]*?\});\s*<\/script>/);
   if (!stamp) {
