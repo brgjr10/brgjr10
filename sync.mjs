@@ -341,4 +341,21 @@ if (SCOPED_TO_THIS_REPO) {
       '  (classic PAT: public_repo + read:user) to get account-wide numbers.'
   );
 }
+// The headline commit count is one account-wide search. A token that can
+// read private repos (a classic PAT with the repo scope, or gh's own
+// token) silently counts commits made in private repos too — activity
+// this snapshot must not publish, since those repos are never listed.
+// The listed repos' own counts are the public floor; a large gap means
+// the token is counting commits outside it.
+const listedRepoCommits = data.repos.reduce((sum, r) => sum + r.commits, 0);
+if (data.totals.commits > listedRepoCommits * 1.1) {
+  console.warn(
+    '\n  WARNING: the account-wide commit search returned ' +
+      `${data.totals.commits} commits, but the listed repos only\n` +
+      `  account for ${listedRepoCommits}. The token can read commits outside the\n` +
+      '  listed public repos (private repos it can access, most likely) and is\n' +
+      '  counting them in the published totals. Use a classic PAT with public_repo\n' +
+      '  + read:user so the numbers cover public repos only.'
+  );
+}
 console.log(`wrote ${OUT}`);
