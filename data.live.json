@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T19:31:26.457Z",
+  "generatedAt": "2026-10-09T23:08:01.320Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 30,
     "ownedRepos": 28,
-    "commits": 456,
+    "commits": 458,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,20 +26,20 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-09T13:10:06Z",
-    "activeThisMonth": 131,
+    "lastPush": "2026-10-09T23:05:45Z",
+    "activeThisMonth": 133,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23149847,
+      "bytes": 23323173,
       "pct": 88.3
     },
     {
       "name": "JavaScript",
-      "bytes": 1811023,
+      "bytes": 1819424,
       "pct": 6.9
     },
     {
@@ -55,7 +55,7 @@
     {
       "name": "TypeScript",
       "bytes": 250332,
-      "pct": 1
+      "pct": 0.9
     },
     {
       "name": "Rust",
@@ -147,7 +147,7 @@
       },
       {
         "end": "2026-10-09",
-        "count": 92
+        "count": 94
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 131
+        "count": 133
       }
     ]
   },
@@ -221,7 +221,22 @@
       "pushedAt": "2026-10-04T16:27:24Z",
       "url": "https://github.com/brgjr10/satellite-app",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 4226,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 1,
+      "hasPages": false,
+      "languages": {
+        "CSS": 84270,
+        "JavaScript": 75563,
+        "TypeScript": 65181,
+        "HTML": 637
+      },
+      "commits": 5,
+      "readmeImage": ""
     },
     {
       "name": "custom-dashboard",
@@ -234,7 +249,22 @@
       "pushedAt": "2026-10-04T16:24:07Z",
       "url": "https://github.com/brgjr10/custom-dashboard",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 87,
+      "openIssues": 3,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 1,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 157130,
+        "CSS": 35828,
+        "HTML": 20760,
+        "Dockerfile": 262
+      },
+      "commits": 6,
+      "readmeImage": ""
     },
     {
       "name": "Zima-MCP",
@@ -247,20 +277,48 @@
       "pushedAt": "2026-08-25T17:01:08Z",
       "url": "https://github.com/brgjr10/Zima-MCP",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 13380,
+      "openIssues": 1,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 1,
+      "hasPages": false,
+      "languages": {
+        "TypeScript": 21147,
+        "HTML": 5716,
+        "CSS": 4404,
+        "Dockerfile": 310
+      },
+      "commits": 8,
+      "readmeImage": ""
     },
     {
       "name": "brgjr10",
       "description": "GitHub Profile README",
-      "language": "JavaScript",
+      "language": "HTML",
       "stars": 0,
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-09T13:10:06Z",
+      "pushedAt": "2026-10-09T23:05:45Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 367,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 174835,
+        "JavaScript": 67130
+      },
+      "commits": 13,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "tampermonkey-scripts",
@@ -273,7 +331,19 @@
       "pushedAt": "2026-10-09T02:16:42Z",
       "url": "https://github.com/brgjr10/tampermonkey-scripts",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 40,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 79039
+      },
+      "commits": 5,
+      "readmeImage": ""
     },
     {
       "name": "dev-nuke-windows",
@@ -286,7 +356,19 @@
       "pushedAt": "2026-10-09T00:07:58Z",
       "url": "https://github.com/brgjr10/dev-nuke-windows",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 8,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Batchfile": 2152
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "youtube-deskop",
@@ -299,7 +381,20 @@
       "pushedAt": "2026-10-06T14:05:55Z",
       "url": "https://github.com/brgjr10/youtube-deskop",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 268,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "CSS": 67505,
+        "JavaScript": 33568
+      },
+      "commits": 15,
+      "readmeImage": ""
     },
     {
       "name": "drawpyo",
@@ -312,7 +407,23 @@
       "pushedAt": "2026-10-06T01:41:34Z",
       "url": "https://github.com/brgjr10/drawpyo",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 454,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "TypeScript": 108222,
+        "Python": 52774,
+        "CSS": 4660,
+        "PowerShell": 619,
+        "HTML": 294
+      },
+      "commits": 49,
+      "readmeImage": ""
     },
     {
       "name": "kilo-agent-mgr",
@@ -325,7 +436,22 @@
       "pushedAt": "2026-10-06T01:21:43Z",
       "url": "https://github.com/brgjr10/kilo-agent-mgr",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 314,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 117940,
+        "JavaScript": 100292,
+        "Rust": 16537,
+        "PowerShell": 2391
+      },
+      "commits": 26,
+      "readmeImage": ""
     },
     {
       "name": "gitphoto",
@@ -338,7 +464,22 @@
       "pushedAt": "2026-10-06T00:45:21Z",
       "url": "https://github.com/brgjr10/gitphoto",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 385,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 133991,
+        "CSS": 8371,
+        "HTML": 3847,
+        "Dockerfile": 1504
+      },
+      "commits": 14,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/gitphoto/master/image.png"
     },
     {
       "name": "issuez",
@@ -351,7 +492,22 @@
       "pushedAt": "2026-10-05T19:23:58Z",
       "url": "https://github.com/brgjr10/issuez",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 563,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://brgjr10.github.io/issuez/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "JavaScript": 132086,
+        "CSS": 34476,
+        "Dockerfile": 2625,
+        "HTML": 1499
+      },
+      "commits": 52,
+      "readmeImage": ""
     },
     {
       "name": "SparrowCord",
@@ -364,7 +520,21 @@
       "pushedAt": "2026-10-05T18:20:03Z",
       "url": "https://github.com/brgjr10/SparrowCord",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 62,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://map.sparrowmap.com/",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 63737,
+        "Dockerfile": 1135,
+        "Shell": 276
+      },
+      "commits": 7,
+      "readmeImage": ""
     },
     {
       "name": "daily-recap-bot",
@@ -377,7 +547,21 @@
       "pushedAt": "2026-10-05T17:54:39Z",
       "url": "https://github.com/brgjr10/daily-recap-bot",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 30,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 30544,
+        "Python": 9181,
+        "PowerShell": 1483
+      },
+      "commits": 7,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/daily-recap-bot/master/example-discord-embed.svg"
     },
     {
       "name": "pit-tv",
@@ -390,7 +574,22 @@
       "pushedAt": "2026-10-05T16:23:35Z",
       "url": "https://github.com/brgjr10/pit-tv",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 17557,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 409898,
+        "CSS": 65762,
+        "HTML": 22880,
+        "Dockerfile": 1912
+      },
+      "commits": 45,
+      "readmeImage": ""
     },
     {
       "name": "watch-later",
@@ -403,7 +602,21 @@
       "pushedAt": "2026-10-04T16:29:15Z",
       "url": "https://github.com/brgjr10/watch-later",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 544,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://watch-later-sigma.vercel.app",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 114811,
+        "CSS": 6314,
+        "HTML": 368
+      },
+      "commits": 99,
+      "readmeImage": ""
     },
     {
       "name": "odot-dashboard",
@@ -416,7 +629,24 @@
       "pushedAt": "2026-10-04T16:28:45Z",
       "url": "https://github.com/brgjr10/odot-dashboard",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 423,
+      "openIssues": 2,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 124387,
+        "HTML": 12683,
+        "CSS": 11589,
+        "Python": 7757,
+        "PowerShell": 2878,
+        "Dockerfile": 485
+      },
+      "commits": 17,
+      "readmeImage": ""
     },
     {
       "name": "PatrolTube",
@@ -429,7 +659,23 @@
       "pushedAt": "2026-10-04T16:28:05Z",
       "url": "https://github.com/brgjr10/PatrolTube",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 970,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Python": 80627,
+        "HTML": 29583,
+        "CSS": 11971,
+        "JavaScript": 4884,
+        "Dockerfile": 1309
+      },
+      "commits": 19,
+      "readmeImage": ""
     },
     {
       "name": "SpotifyConnectLocal",
@@ -442,7 +688,19 @@
       "pushedAt": "2026-10-04T16:25:38Z",
       "url": "https://github.com/brgjr10/SpotifyConnectLocal",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 7,
+      "openIssues": 1,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Python": 1696
+      },
+      "commits": 3,
+      "readmeImage": ""
     },
     {
       "name": "DeadVisionAi",
@@ -455,7 +713,23 @@
       "pushedAt": "2026-08-25T17:01:34Z",
       "url": "https://github.com/brgjr10/DeadVisionAi",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 1889,
+      "openIssues": 1,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Python": 299637,
+        "CSS": 76300,
+        "JavaScript": 58804,
+        "TypeScript": 18457,
+        "HTML": 16429
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "coil-calculator",
@@ -468,7 +742,21 @@
       "pushedAt": "2026-08-25T17:01:29Z",
       "url": "https://github.com/brgjr10/coil-calculator",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 47237,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 19181604,
+        "JavaScript": 51653,
+        "Batchfile": 207
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "FactorApp",
@@ -481,7 +769,22 @@
       "pushedAt": "2026-08-25T17:01:25Z",
       "url": "https://github.com/brgjr10/FactorApp",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 59,
+      "openIssues": 1,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 17481,
+        "CSS": 4649,
+        "HTML": 1714,
+        "Batchfile": 54
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "Grocery_List",
@@ -494,7 +797,19 @@
       "pushedAt": "2026-08-25T17:01:21Z",
       "url": "https://github.com/brgjr10/Grocery_List",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 11,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 33372
+      },
+      "commits": 3,
+      "readmeImage": ""
     },
     {
       "name": "WFProfileManager",
@@ -507,7 +822,20 @@
       "pushedAt": "2026-08-25T17:01:03Z",
       "url": "https://github.com/brgjr10/WFProfileManager",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 95,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 28354,
+        "JavaScript": 992
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "WFProj",
@@ -520,7 +848,21 @@
       "pushedAt": "2026-08-25T17:00:59Z",
       "url": "https://github.com/brgjr10/WFProj",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 68389,
+      "openIssues": 1,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 3356396,
+        "JavaScript": 9762,
+        "Python": 6068
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "strudel-ui",
@@ -533,7 +875,19 @@
       "pushedAt": "2026-08-25T17:00:28Z",
       "url": "https://github.com/brgjr10/strudel-ui",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 27,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 194762
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "radioapp",
@@ -546,7 +900,22 @@
       "pushedAt": "2026-08-25T17:00:14Z",
       "url": "https://github.com/brgjr10/radioapp",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 135,
+      "openIssues": 2,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "JavaScript": 153672,
+        "CSS": 19731,
+        "HTML": 6855,
+        "Dockerfile": 438
+      },
+      "commits": 8,
+      "readmeImage": ""
     },
     {
       "name": "ModelRouter",
@@ -559,7 +928,22 @@
       "pushedAt": "2026-08-25T17:00:08Z",
       "url": "https://github.com/brgjr10/ModelRouter",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 112,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Python": 84897,
+        "TypeScript": 37325,
+        "HTML": 1087,
+        "Batchfile": 829
+      },
+      "commits": 4,
+      "readmeImage": ""
     },
     {
       "name": "brgjr10.github.io",
@@ -572,7 +956,19 @@
       "pushedAt": "2026-08-21T00:35:07Z",
       "url": "https://github.com/brgjr10/brgjr10.github.io",
       "private": false,
-      "archived": false
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 9529,
+      "openIssues": 1,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 111558
+      },
+      "commits": 23,
+      "readmeImage": ""
     }
   ]
 }
