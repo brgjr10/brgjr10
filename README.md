@@ -1,3 +1,5 @@
+[**▸ interactive portfolio — every repo, searchable and sortable**](https://brgjr10.github.io/brgjr10/)
+
 <picture><source srcset="https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/dark/header.svg" media="(prefers-color-scheme: dark)"><img src="https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg" alt="Brodie Grant — Full-Stack Developer & Operations Automation Engineer"></picture>
 
 <picture><source srcset="https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/dark/s01.svg" media="(prefers-color-scheme: dark)"><img src="https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/s01.svg" alt="01 — identity"></picture>

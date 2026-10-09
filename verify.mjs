@@ -343,6 +343,68 @@ for (const sec of SECTIONS) {
 }
 ok.push('every generated card has light and dark references in README.md');
 
+// ---------- 8. portfolio site ----------
+//
+// index.html is site.mjs's stamp of data.live.json into
+// site.html. The checks that matter: the stamp ran, the
+// embedded DATA parses, and it is the same account and the
+// same repo list as the snapshot — a stale or partial stamp
+// would fail here rather than ship a lying page.
+
+const sitePath = join(ROOT, 'index.html');
+if (!existsSync(sitePath)) {
+  fail.push('index.html missing — run node site.mjs');
+} else {
+  const site = readFileSync(sitePath, 'utf8');
+  if (site.includes('/*__PROFILE_DATA__*/')) fail.push('index.html still has the un-stamped data placeholder');
+  if (site.includes('undefined')) fail.push('index.html contains undefined');
+  if (site.includes('NaN')) fail.push('index.html contains NaN');
+
+  const stamp = site.match(/const DATA = (\{[\s\S]*?\});\s*<\/script>/);
+  if (!stamp) {
+    fail.push('index.html has no stamped DATA object');
+  } else {
+    const liveData = JSON.parse(live);
+    let stamped;
+    try {
+      stamped = JSON.parse(stamp[1]);
+    } catch (err) {
+      fail.push('index.html DATA is not valid JSON: ' + err.message);
+    }
+    if (stamped) {
+      if (stamped.handle !== liveData.handle) {
+        fail.push(`index.html DATA handle is @${stamped.handle}, data.live.json says @${liveData.handle}`);
+      }
+      const stampedNames = (stamped.repos || []).map((r) => r.name);
+      const liveNames = liveData.repos.map((r) => r.name);
+      if (JSON.stringify(stampedNames) !== JSON.stringify(liveNames)) {
+        fail.push('index.html repo list does not match data.live.json');
+      }
+      // Covers are rendered as <img src> on a public https page, so
+      // anything sync produced must be an https URL — a stray http:
+      // would be mixed content, anything else would be a red flag.
+      for (const r of stamped.repos || []) {
+        if (r.readmeImage && !/^https:\/\//.test(r.readmeImage)) {
+          fail.push(`repo ${r.name} has a non-https readmeImage: ${r.readmeImage}`);
+        }
+      }
+      for (const r of liveData.repos) {
+        if (r.private) fail.push(`private repo ${r.name} must not be in the public snapshot`);
+      }
+      if (!stamped.prose || !stamped.prose.marqueeTop || !stamped.prose.facts) {
+        fail.push('index.html DATA is missing the prose payload');
+      }
+      if (!stamped.activity || !stamped.activity.weeks || !stamped.activity.months) {
+        fail.push('index.html DATA is missing the activity history');
+      }
+      if (stamped.generatedAt !== liveData.generatedAt) {
+        fail.push('index.html DATA generatedAt does not match data.live.json');
+      }
+    }
+  }
+  ok.push('index.html stamped from the same data.live.json (account, repos, prose, activity)');
+}
+
 // ---------- report ----------
 
 for (const line of ok) console.log('  ok   ' + line);

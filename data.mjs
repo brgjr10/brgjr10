@@ -126,6 +126,16 @@ const RIG = [
   'never sleeps. If it does not survive a reboot, it does not ship.'
 ];
 
+// The hero voice, defined once. build.mjs renders these same
+// strings via siteProse, so the prose has exactly one home.
+const TAGLINE = 'OPERATIONS AUTOMATION · SELF-HOSTED · LOCAL AI';
+const BLURB = [
+  'Shipping browser automation, Electron apps, live dashboards, and the Docker',
+  'services that keep them running. Everything self-hosted where it can be.'
+];
+
+export const rig = RIG;
+
 export const whoami = {
   kicker: '01 / whoami',
   heading: 'WHAT I ACTUALLY BUILD',
@@ -285,10 +295,26 @@ export const footer = {
 // Digits are allowed to appear in these strings ("Raspberry Pi 5") because they
 // are part of the writing, not a count of something GitHub reports.
 export const PROSE = [
-  'OPERATIONS AUTOMATION · SELF-HOSTED · LOCAL AI',
-  'Shipping browser automation, Electron apps, live dashboards, and the Docker',
-  'services that keep them running. Everything self-hosted where it can be.',
+  TAGLINE,
+  ...BLURB,
   ...BODY.flat(),
   ...RIG,
   footer.sign
 ];
+
+// ---------- the portfolio site ----------
+
+// Everything site.mjs stamps into index.html as prose. References
+// to the consts above, not copies — the SVG cards and the HTML
+// site read the same strings, so the writing has one home.
+export const siteProse = {
+  tagline: TAGLINE,
+  blurb: BLURB,
+  marqueeTop,
+  marqueeBottom,
+  body: whoami.body,
+  rig: RIG,
+  priorities: whoami.priorities,
+  facts: whoami.facts,
+  sign: 'every fact on this page rendered from the GitHub API'
+};

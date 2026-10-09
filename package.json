@@ -10,9 +10,10 @@
   "scripts": {
     "sync": "node sync.mjs",
     "build": "node build.mjs",
+    "site": "node site.mjs",
     "readme": "node readme.mjs",
     "verify": "node verify.mjs",
-    "preview": "node sync.mjs && node build.mjs && node readme.mjs && node verify.mjs",
-    "all": "npm run sync && npm run build && npm run readme && npm run verify"
+    "preview": "node sync.mjs && node build.mjs && node site.mjs && node readme.mjs && node verify.mjs",
+    "all": "npm run sync && npm run build && npm run site && npm run readme && npm run verify"
   }
 }

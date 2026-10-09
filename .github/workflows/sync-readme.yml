@@ -1,9 +1,10 @@
-# Keeps the profile README honest.
+# Keeps the profile README and the portfolio site honest.
 #
 # Every commit to this repo — and every 6 hours regardless — refetches the
-# account from the GitHub API, regenerates the cards, rewrites the README, and
-# commits the result if anything moved. Nothing on a card is typed by hand, so
-# this is the only thing that has to run for the profile to stay current.
+# account from the GitHub API, regenerates the SVG cards, stamps the
+# portfolio index.html, rewrites the README, and commits the result if
+# anything moved. Nothing on a card is typed by hand, so this is the
+# only thing that has to run for the profile and the site to stay current.
 #
 # Setup (once):
 #   Settings -> Secrets -> Actions -> New repository secret
@@ -67,6 +68,9 @@ jobs:
 
       - name: Generate cards
         run: node build.mjs
+
+      - name: Generate portfolio site
+        run: node site.mjs
 
       - name: Generate README
         run: node readme.mjs

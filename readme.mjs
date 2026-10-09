@@ -33,6 +33,11 @@ const altFor = {
 
 const RAW_BASE = 'https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets';
 
+// The interactive portfolio lives one level above the README.
+// Project Pages URL for this repo; override with PROFILE_SITE_URL
+// if the page is hosted somewhere else.
+const SITE_URL = process.env.PROFILE_SITE_URL || 'https://brgjr10.github.io/brgjr10/';
+
 const embed = (name) => {
   const light = `${RAW_BASE}/${name}.svg`;
   const dark = `${RAW_BASE}/dark/${name}.svg`;
@@ -43,6 +48,8 @@ const embed = (name) => {
 
 
 const lines = [
+  `[**▸ interactive portfolio — every repo, searchable and sortable**](${SITE_URL})`,
+  '',
   embed('header'),
   '',
   embed('s01'),

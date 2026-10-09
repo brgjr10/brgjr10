@@ -221,18 +221,18 @@ function header() {
 
   b += T(40, 172, D.profile.name, { size: 62, weight: 700, family: 'sans', ls: 1 });
   b += R(40, 196, 54, 4, { fill: P('accent'), rx: 2 });
-  b += T(108, 201, 'OPERATIONS AUTOMATION · SELF-HOSTED · LOCAL AI', {
+  b += T(108, 201, D.siteProse.tagline, {
     size: 11.5,
     fill: P('accent'),
     ls: 1.6
   });
 
   b += T(40, 252, D.profile.title, { size: 18, fill: P('text'), ls: 0.4 });
-  b += T(40, 292, 'Shipping browser automation, Electron apps, live dashboards, and the Docker', {
+  b += T(40, 292, D.siteProse.blurb[0], {
     size: 13,
     fill: P('muted')
   });
-  b += T(40, 314, 'services that keep them running. Everything self-hosted where it can be.', {
+  b += T(40, 314, D.siteProse.blurb[1], {
     size: 13,
     fill: P('muted')
   });
@@ -305,12 +305,12 @@ function whoami() {
     }
     y += 16;
   }
-  b += T(66, y + 4, 'Home lab is the test rig: ZimaOS, a Raspberry Pi 5, and a PC that', {
+  b += T(66, y + 4, D.rig[0], {
     size: 12.5,
     fill: P('text'),
     op: 0.86
   });
-  b += T(66, y + 25, 'never sleeps. If it does not survive a reboot, it does not ship.', {
+  b += T(66, y + 25, D.rig[1], {
     size: 12.5,
     fill: P('text'),
     op: 0.86

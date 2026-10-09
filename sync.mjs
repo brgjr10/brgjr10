@@ -70,10 +70,12 @@ async function api(path, params = {}) {
 }
 
 // search/commits is its own rate-limit bucket (30/min authenticated), so the
-// weekly buckets run sequentially with a floor between them.
+// weekly buckets, monthly buckets, and per-repo counts all run sequentially
+// through here with a floor between them. 2200ms keeps a sustained run under
+// the secondary limit even with the per-repo queries added below.
 let lastSearch = 0;
 async function searchCommits(q) {
-  const floor = 2100;
+  const floor = 2200;
   const wait = lastSearch + floor - Date.now();
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
   lastSearch = Date.now();
@@ -84,6 +86,48 @@ async function searchCommits(q) {
 const iso = (d) => d.toISOString().slice(0, 10);
 const monthKey = (d) => d.toISOString().slice(0, 7);
 
+// ---------- readme cover images ----------
+
+// Hosts that only ever serve badges. A README's first image is
+// usually a workflow or coverage badge, which makes a terrible
+// cover — so those are skipped in favor of the first real image.
+const BADGE_HOSTS = [
+  'shields.io', 'img.shields.io', 'badgen.net', 'flat.badgen.net',
+  'circleci.com', 'coveralls.io', 'scrutinizer-ci.com', 'travis-ci.org',
+  'ci.appveyor.com', 'badge.fury.io', 'versioneye.com', 'codacy.com',
+  'codeclimate.com', 'sonarcloud.io', 'dev.azure.com', 'visualstudio.com',
+  'github.com'
+];
+
+// The cover image of a README: the first image in document order
+// that is not a badge. Relative paths resolve against the repo
+// root on the default branch, which is how GitHub renders them.
+// Only https URLs are kept — http: would be mixed content on the
+// https site, and data: URIs would bloat the JSON.
+const readmeCover = (md, fullName, defaultBranch) => {
+  if (!md) return '';
+  const candidates = [];
+  const anyImg = /(?:!\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)|<img[^>]+?src=["']([^"']+)["'])/gi;
+  let m;
+  while ((m = anyImg.exec(md))) candidates.push(m[1] || m[2]);
+  for (const raw of candidates) {
+    let src = String(raw).trim();
+    if (!src) continue;
+    if (src.startsWith('//')) src = 'https:' + src;
+    if (/^https:\/\//i.test(src)) {
+      try {
+        const host = new URL(src).hostname.replace(/^www\./, '');
+        if (!BADGE_HOSTS.includes(host)) return src;
+      } catch (e) { /* unparseable — skip */ }
+      continue;
+    }
+    if (/^https?:\/\//i.test(src) || src.startsWith('data:')) continue;
+    const clean = src.replace(/^[./]+/, '');
+    return `https://raw.githubusercontent.com/${fullName}/${defaultBranch}/${clean}`;
+  }
+  return '';
+};
+
 // ---------- collection ----------
 
 async function collect() {
@@ -91,7 +135,9 @@ async function collect() {
   if (!profile) throw new Error(`user ${HANDLE} not found`);
 
   // Owner repos, newest push first. /user/repos includes private repos when the
-  // token belongs to the profile owner, which is what the counts should reflect.
+  // token belongs to the profile owner. Private repos are counted but never
+  // listed: this snapshot is committed to a public repository, so a private
+  // repo's name, description, or cover image must not end up in it.
   const owned = [];
   for (let page = 1; page <= 5; page += 1) {
     const batch = await api('user/repos', {
@@ -104,10 +150,28 @@ async function collect() {
     owned.push(...batch.filter((r) => !r.fork));
     if (batch.length < 100) break;
   }
+  const ownedCount = owned.length;
 
   const repos = [];
   const languageBytes = new Map();
   for (const r of owned) {
+    if (r.private) continue;
+    // Per-repo language breakdown. The map is already fetched for the
+    // aggregate stack card; keeping it per repo is what lets the
+    // portfolio site break each repo down without another API call.
+    const langs = await api(`repos/${r.full_name}/languages`);
+    // Commits by the account author in this repo. GitHub shows a commit
+    // count only when you open the repo — aggregating all of them in one
+    // sortable view is depth the repo list alone does not give.
+    const commitCount = await searchCommits(`repo:${r.full_name} author:${HANDLE}`);
+    // The README's cover image, so the portfolio can show a real
+    // thumbnail per repo instead of a wall of text.
+    const readme = await api(`repos/${r.full_name}/readme`);
+    let readmeImage = '';
+    if (readme && readme.content && readme.encoding === 'base64') {
+      const md = Buffer.from(readme.content, 'base64').toString('utf8');
+      readmeImage = readmeCover(md, r.full_name, r.default_branch || 'main');
+    }
     repos.push({
       name: r.name,
       description: r.description || '',
@@ -119,12 +183,22 @@ async function collect() {
       pushedAt: r.pushed_at,
       url: r.html_url,
       private: !!r.private,
-      archived: !!r.archived
+      archived: !!r.archived,
+      defaultBranch: r.default_branch || 'main',
+      size: r.size || 0,
+      openIssues: r.open_issues_count || 0,
+      license: (r.license && r.license.spdx_id) || '',
+      homepage: r.homepage || '',
+      watchers: r.watchers_count || 0,
+      hasPages: !!r.has_pages,
+      languages: langs || {},
+      commits: commitCount,
+      readmeImage
     });
-    const langs = await api(`repos/${r.full_name}/languages`);
-    if (!langs) continue;
-    for (const [name, bytes] of Object.entries(langs)) {
-      languageBytes.set(name, (languageBytes.get(name) || 0) + bytes);
+    if (langs) {
+      for (const [name, bytes] of Object.entries(langs)) {
+        languageBytes.set(name, (languageBytes.get(name) || 0) + bytes);
+      }
     }
   }
 
@@ -203,7 +277,7 @@ async function collect() {
     },
     totals: {
       publicRepos: profile.public_repos,
-      ownedRepos: repos.length,
+      ownedRepos: ownedCount,
       commits: totalCommits,
       stars,
       starRepos,
