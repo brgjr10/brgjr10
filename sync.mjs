@@ -89,14 +89,13 @@ const monthKey = (d) => d.toISOString().slice(0, 7);
 // ---------- readme cover images ----------
 
 // Hosts that only ever serve badges. A README's first image is
-// usually a workflow or coverage badge, which makes a terrible
+// often a workflow or coverage badge, which makes a terrible
 // cover — so those are skipped in favor of the first real image.
 const BADGE_HOSTS = [
   'shields.io', 'img.shields.io', 'badgen.net', 'flat.badgen.net',
   'circleci.com', 'coveralls.io', 'scrutinizer-ci.com', 'travis-ci.org',
   'ci.appveyor.com', 'badge.fury.io', 'versioneye.com', 'codacy.com',
-  'codeclimate.com', 'sonarcloud.io', 'dev.azure.com', 'visualstudio.com',
-  'github.com'
+  'codeclimate.com', 'sonarcloud.io', 'dev.azure.com', 'visualstudio.com'
 ];
 
 // The cover image of a README: the first image in document order
@@ -111,21 +110,44 @@ const readmeCover = (md, fullName, defaultBranch) => {
   let m;
   while ((m = anyImg.exec(md))) candidates.push(m[1] || m[2]);
   for (const raw of candidates) {
-    let src = String(raw).trim();
-    if (!src) continue;
-    if (src.startsWith('//')) src = 'https:' + src;
-    if (/^https:\/\//i.test(src)) {
-      try {
-        const host = new URL(src).hostname.replace(/^www\./, '');
-        if (!BADGE_HOSTS.includes(host)) return src;
-      } catch (e) { /* unparseable — skip */ }
-      continue;
-    }
-    if (/^https?:\/\//i.test(src) || src.startsWith('data:')) continue;
-    const clean = src.replace(/^[./]+/, '');
-    return `https://raw.githubusercontent.com/${fullName}/${defaultBranch}/${clean}`;
+    const url = normalizeImageUrl(raw, fullName, defaultBranch);
+    if (url && !isBadgeUrl(url)) return url;
   }
   return '';
+};
+
+// Absolute URLs pass through, with one rewrite: GitHub serves
+// the bytes of a repo-hosted image from raw.githubusercontent.com,
+// not from the /blob or /raw HTML pages, so those links are
+// pointed at the file directly. Anything else unparseable,
+// plain http:, or a data: URI is dropped.
+const normalizeImageUrl = (src, fullName, defaultBranch) => {
+  let url = String(src).trim();
+  if (!url) return '';
+  if (url.startsWith('//')) url = 'https:' + url;
+  if (/^https:\/\//i.test(url)) {
+    const gh = url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/(blob|raw)\/([^/]+)\/(.+)$/i);
+    if (gh) return `https://raw.githubusercontent.com/${gh[1]}/${gh[3]}/${gh[4]}`;
+    return url;
+  }
+  if (/^https?:\/\//i.test(url) || url.startsWith('data:')) return '';
+  const clean = url.replace(/^[./]+/, '');
+  return `https://raw.githubusercontent.com/${fullName}/${defaultBranch}/${clean}`;
+};
+
+// Badges live either on a dedicated badge host, or on github.com
+// under /actions/workflows/ (workflow status badges). Everything
+// else on github.com — pasted screenshots under /user-attachments,
+// release assets, repo images — is a real image and a valid cover.
+const isBadgeUrl = (url) => {
+  try {
+    const { hostname, pathname } = new URL(url);
+    const host = hostname.replace(/^www\./, '');
+    if (host === 'github.com' && pathname.includes('/actions/workflows/')) return true;
+    return BADGE_HOSTS.includes(host);
+  } catch (e) {
+    return false;
+  }
 };
 
 // ---------- collection ----------
