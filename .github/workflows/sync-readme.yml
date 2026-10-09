@@ -104,7 +104,11 @@ jobs:
           # message — it reads better in the history than a generic string.
           STAMP=$(node -e "console.log(require('./data.live.json').generatedAt.slice(0, 16).replace('T', ' '))")
           git commit -m "sync readme from github api (${STAMP}) [skip ci]"
-          git push
+          # A dispatch and a push can still overlap (a cron run queued
+          # behind a push-triggered one). If origin moved first, rebase
+          # onto it and retry; a genuine conflict fails and the next
+          # cron run heals the data.
+          git push || (git pull --rebase && git push)
 
       - name: Fail if the token made the counts unreliable
         if: always()

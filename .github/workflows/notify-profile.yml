@@ -32,6 +32,11 @@ permissions:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    # In the profile repo itself this would double-fire: a push to
+    # main already triggers sync-readme.yml directly, so the
+    # dispatch would only queue a second run that races the first
+    # on the commit. Only external repos need the dispatch.
+    if: github.repository != 'brgjr10/brgjr10'
     # The point of this workflow is the side effect, not its own result, so it
     # must not block on the profile repo's queue.
     timeout-minutes: 5
