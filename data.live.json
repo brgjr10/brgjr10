@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T23:14:13.351Z",
+  "generatedAt": "2026-10-09T23:37:02.195Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 30,
     "ownedRepos": 28,
-    "commits": 460,
+    "commits": 462,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,8 +26,8 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-09T23:11:55Z",
-    "activeThisMonth": 135,
+    "lastPush": "2026-10-09T23:34:43Z",
+    "activeThisMonth": 137,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
@@ -39,7 +39,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 1819424,
+      "bytes": 1821451,
       "pct": 6.9
     },
     {
@@ -147,7 +147,7 @@
       },
       {
         "end": "2026-10-09",
-        "count": 96
+        "count": 98
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 135
+        "count": 137
       }
     ]
   },
@@ -236,7 +236,7 @@
         "HTML": 637
       },
       "commits": 5,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/33334040-4f91-4abf-a993-2cd520e10bfc"
     },
     {
       "name": "custom-dashboard",
@@ -264,7 +264,7 @@
         "Dockerfile": 262
       },
       "commits": 6,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
       "name": "Zima-MCP",
@@ -292,7 +292,7 @@
         "Dockerfile": 310
       },
       "commits": 8,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
       "name": "brgjr10",
@@ -302,7 +302,7 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-09T23:11:55Z",
+      "pushedAt": "2026-10-09T23:34:43Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
@@ -315,9 +315,9 @@
       "hasPages": true,
       "languages": {
         "HTML": 180849,
-        "JavaScript": 67130
+        "JavaScript": 69157
       },
-      "commits": 15,
+      "commits": 17,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
@@ -368,7 +368,7 @@
         "Batchfile": 2152
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/8b6bd03d-0320-42e7-8adb-b61e2fc1fc9b"
     },
     {
       "name": "youtube-deskop",
@@ -394,7 +394,7 @@
         "JavaScript": 33568
       },
       "commits": 15,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/6d181f34-d57a-468f-8235-20187e17dbfc"
     },
     {
       "name": "drawpyo",
@@ -423,7 +423,7 @@
         "HTML": 294
       },
       "commits": 49,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/d3d772a0-01f9-4074-8d54-fc2afae1023d"
     },
     {
       "name": "kilo-agent-mgr",
@@ -507,7 +507,7 @@
         "HTML": 1499
       },
       "commits": 52,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/6859a83c-9541-4a38-939b-59ef5084809f"
     },
     {
       "name": "SparrowCord",
@@ -534,7 +534,7 @@
         "Shell": 276
       },
       "commits": 7,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/897889c6-def8-420c-86de-46f867016ff9"
     },
     {
       "name": "daily-recap-bot",
@@ -589,7 +589,7 @@
         "Dockerfile": 1912
       },
       "commits": 45,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/01c6dc70-818a-47ac-96bf-b598612a4db4"
     },
     {
       "name": "watch-later",
@@ -616,7 +616,7 @@
         "HTML": 368
       },
       "commits": 99,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/4d49cb6f-e254-4094-8f88-fba4151cf736"
     },
     {
       "name": "odot-dashboard",
@@ -646,7 +646,7 @@
         "Dockerfile": 485
       },
       "commits": 17,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/0ffa7048-7c39-4806-b282-656ca42b9e29"
     },
     {
       "name": "PatrolTube",
@@ -675,7 +675,7 @@
         "Dockerfile": 1309
       },
       "commits": 19,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/6c91ea0b-7d04-47e7-9227-0e22bf8e2445"
     },
     {
       "name": "SpotifyConnectLocal",
@@ -700,7 +700,7 @@
         "Python": 1696
       },
       "commits": 3,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/ea975f43-8a25-468d-b5f0-5da5209552b5"
     },
     {
       "name": "DeadVisionAi",
@@ -729,7 +729,7 @@
         "HTML": 16429
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/a75045f0-1153-4055-9dce-251bd427e765"
     },
     {
       "name": "coil-calculator",
@@ -756,7 +756,7 @@
         "Batchfile": 207
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/2b9e7fb0-246a-45f5-aad8-a742bf4edbb2"
     },
     {
       "name": "FactorApp",
@@ -784,7 +784,7 @@
         "Batchfile": 54
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/27881d28-9f2e-4afb-843d-1aa8765ec9f0"
     },
     {
       "name": "Grocery_List",
@@ -835,7 +835,7 @@
         "JavaScript": 992
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/f6f788c5-3580-4529-add6-c2d81de95b50"
     },
     {
       "name": "WFProj",
@@ -862,7 +862,7 @@
         "Python": 6068
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/f057c0c1-c3d7-4342-94de-6ea621707220"
     },
     {
       "name": "strudel-ui",
@@ -887,7 +887,7 @@
         "HTML": 194762
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/6a316e07-bac0-4bd5-a852-a309a2f4bdb3"
     },
     {
       "name": "radioapp",
@@ -915,7 +915,7 @@
         "Dockerfile": 438
       },
       "commits": 8,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/be48d112-3ccd-4e85-8195-92a4517f994d"
     },
     {
       "name": "ModelRouter",
@@ -943,7 +943,7 @@
         "Batchfile": 829
       },
       "commits": 4,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/0eb34642-4ecf-4235-9bbb-f35bf1774e3e"
     },
     {
       "name": "brgjr10.github.io",
@@ -968,7 +968,7 @@
         "HTML": 111558
       },
       "commits": 23,
-      "readmeImage": ""
+      "readmeImage": "https://github.com/user-attachments/assets/c5bbb21c-c5f4-4d09-b01a-0daf146b3ef2"
     }
   ]
 }
