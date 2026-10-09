@@ -24,7 +24,10 @@ on:
   workflow_dispatch:
 
 permissions:
+  # createWorkflowDispatch below needs actions:write; without it
+  # the trigger is a 403 and the profile never refreshes.
   contents: read
+  actions: write
 
 jobs:
   notify:
