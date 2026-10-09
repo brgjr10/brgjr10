@@ -40,37 +40,10 @@ const embed = (name) => {
   return `<picture><source srcset="${dark}" media="(prefers-color-scheme: dark)"><img src="${light}" alt="${alt}"></picture>`;
 };
 
-// Only the live-derived parts of the badge row; the rest is static positioning.
-const badge = (label, href, { fill = 'ffffff', logo = '', logoColor = '000000', message = '' } = {}) => {
-  const params = new URLSearchParams({ style: 'flat-square' });
-  if (logo) {
-    params.set('logo', logo);
-    params.set('logoColor', logoColor);
-  }
-  const slug = `${label}-${message}-${fill}`;
-  return `[![${label}](https://img.shields.io/badge/${slug}?${params})](${href})`;
-};
 
-const badges = [
-  badge(D.profile.handle.toUpperCase(), D.profile.portfolio),
-  badge('REPOS', `https://github.com/${D.profile.handle}?tab=repositories`, {
-    logo: 'github',
-    message: String(D.projects.count)
-  }),
-  badge('FOLLOW', `https://github.com/${D.profile.handle}`, {
-    logo: 'github',
-    message: String(D.snapshot.followers)
-  }),
-  badge('COMMITS', `https://github.com/${D.profile.handle}/graphs/commit-activity`, {
-    logo: 'git-commit',
-    message: String(D.snapshot.commits)
-  })
-].join(' ');
 
 const lines = [
   embed('header'),
-  '',
-  badges,
   '',
   embed('s01'),
   embed('whoami'),
