@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T00:24:28.140Z",
+  "generatedAt": "2026-10-09T06:02:09.282Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 30,
     "ownedRepos": 28,
-    "commits": 452,
+    "commits": 456,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,8 +26,8 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-09T00:23:13Z",
-    "activeThisMonth": 130,
+    "lastPush": "2026-10-09T02:16:42Z",
+    "activeThisMonth": 131,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
@@ -39,8 +39,8 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 1792172,
-      "pct": 6.8
+      "bytes": 1811023,
+      "pct": 6.9
     },
     {
       "name": "Python",
@@ -147,7 +147,7 @@
       },
       {
         "end": "2026-10-09",
-        "count": 91
+        "count": 92
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 130
+        "count": 131
       }
     ]
   },
@@ -250,6 +250,19 @@
       "archived": false
     },
     {
+      "name": "tampermonkey-scripts",
+      "description": "My personal-use collection of Tampermonkey userscripts.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:45Z",
+      "pushedAt": "2026-10-09T02:16:42Z",
+      "url": "https://github.com/brgjr10/tampermonkey-scripts",
+      "private": false,
+      "archived": false
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "JavaScript",
@@ -257,7 +270,7 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-09T00:23:13Z",
+      "pushedAt": "2026-10-09T00:24:29Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
@@ -506,19 +519,6 @@
       "createdAt": "2026-07-22T15:18:50Z",
       "pushedAt": "2026-08-25T17:00:59Z",
       "url": "https://github.com/brgjr10/WFProj",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "tampermonkey-scripts",
-      "description": "My personal-use collection of Tampermonkey userscripts.",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-07-22T15:18:45Z",
-      "pushedAt": "2026-08-25T17:00:33Z",
-      "url": "https://github.com/brgjr10/tampermonkey-scripts",
       "private": false,
       "archived": false
     },
