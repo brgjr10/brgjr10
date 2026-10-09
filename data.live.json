@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T23:18:31.742Z",
+  "generatedAt": "2026-10-09T00:24:28.140Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 30,
     "ownedRepos": 28,
-    "commits": 451,
+    "commits": 452,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,8 +26,8 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-08T17:52:12Z",
-    "activeThisMonth": 126,
+    "lastPush": "2026-10-09T00:23:13Z",
+    "activeThisMonth": 130,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
   },
@@ -86,68 +86,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-06-25",
+        "end": "2026-06-26",
         "count": 0
       },
       {
-        "end": "2026-07-02",
+        "end": "2026-07-03",
         "count": 0
       },
       {
-        "end": "2026-07-09",
+        "end": "2026-07-10",
         "count": 0
       },
       {
-        "end": "2026-07-16",
+        "end": "2026-07-17",
         "count": 22
       },
       {
-        "end": "2026-07-23",
+        "end": "2026-07-24",
         "count": 12
       },
       {
-        "end": "2026-07-30",
+        "end": "2026-07-31",
         "count": 0
       },
       {
-        "end": "2026-08-06",
+        "end": "2026-08-07",
         "count": 41
       },
       {
-        "end": "2026-08-13",
+        "end": "2026-08-14",
         "count": 3
       },
       {
-        "end": "2026-08-20",
+        "end": "2026-08-21",
         "count": 0
       },
       {
-        "end": "2026-08-27",
-        "count": 94
+        "end": "2026-08-28",
+        "count": 100
       },
       {
-        "end": "2026-09-03",
-        "count": 6
-      },
-      {
-        "end": "2026-09-10",
+        "end": "2026-09-04",
         "count": 0
       },
       {
-        "end": "2026-09-17",
+        "end": "2026-09-11",
         "count": 0
       },
       {
-        "end": "2026-09-24",
+        "end": "2026-09-18",
         "count": 0
       },
       {
-        "end": "2026-10-01",
+        "end": "2026-09-25",
+        "count": 0
+      },
+      {
+        "end": "2026-10-02",
         "count": 92
       },
       {
-        "end": "2026-10-08",
-        "count": 87
+        "end": "2026-10-09",
+        "count": 91
       }
     ],
     "months": [
@@ -205,7 +205,7 @@
       },
       {
         "month": "2026-10",
-        "count": 126
+        "count": 130
       }
     ]
   },
@@ -257,8 +257,21 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-08T17:52:12Z",
+      "pushedAt": "2026-10-09T00:23:13Z",
       "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false
+    },
+    {
+      "name": "dev-nuke-windows",
+      "description": "A nuclear option for clearing developer bloat on Windows in one shot.",
+      "language": "Batchfile",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-06T01:00:29Z",
+      "pushedAt": "2026-10-09T00:07:58Z",
+      "url": "https://github.com/brgjr10/dev-nuke-windows",
       "private": false,
       "archived": false
     },
@@ -298,19 +311,6 @@
       "createdAt": "2026-10-04T04:04:01Z",
       "pushedAt": "2026-10-06T01:21:43Z",
       "url": "https://github.com/brgjr10/kilo-agent-mgr",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "dev-nuke-windows",
-      "description": "A nuclear option for clearing developer bloat on Windows in one shot.",
-      "language": "Batchfile",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-06T01:00:29Z",
-      "pushedAt": "2026-10-06T01:10:34Z",
-      "url": "https://github.com/brgjr10/dev-nuke-windows",
       "private": false,
       "archived": false
     },
