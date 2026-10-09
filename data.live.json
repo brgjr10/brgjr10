@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T06:02:09.282Z",
+  "generatedAt": "2026-10-09T13:10:03.915Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 10,
-    "lastPush": "2026-10-09T02:16:42Z",
+    "lastPush": "2026-10-09T06:02:10Z",
     "activeThisMonth": 131,
     "peakMonth": "2026-08",
     "peakMonthCommits": 144
@@ -250,6 +250,19 @@
       "archived": false
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-09T06:02:10Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false
+    },
+    {
       "name": "tampermonkey-scripts",
       "description": "My personal-use collection of Tampermonkey userscripts.",
       "language": "JavaScript",
@@ -259,19 +272,6 @@
       "createdAt": "2026-07-22T15:18:45Z",
       "pushedAt": "2026-10-09T02:16:42Z",
       "url": "https://github.com/brgjr10/tampermonkey-scripts",
-      "private": false,
-      "archived": false
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-09T00:24:29Z",
-      "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false
     },
