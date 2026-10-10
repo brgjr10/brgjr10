@@ -739,14 +739,6 @@ footer { padding: 60px 0 40px; }
         <div class="legend" id="langLegend"></div>
       </div>
     </div>
-    <div style="height:16px"></div>
-    <div class="chartbox">
-      <div class="charthead">
-        <span class="t">TOPICS ACROSS ALL REPOS</span>
-        <span class="m">click a topic to filter the explorer</span>
-      </div>
-      <div class="topics" id="topicCloud"></div>
-    </div>
   </section>
 
 </main>
@@ -835,6 +827,38 @@ const DATA = /*__PROFILE_DATA__*/null;
   };
   var langColor = function (n) { return LANG_COLORS[n] || '#8b949e'; };
 
+  // GitHub returns topics only for repos that have them explicitly set, and
+  // most of these do not — so the topic cloud and the per-repo tag row would
+  // render empty. Fall back to the tokens in the repo's own description, which
+  // is API data and not hand-typed. Stopwords and single chars are dropped so
+  // the cloud is meaningful rather than full of "and"/"the"/"a".
+  var STOPWORDS = { a: 1, an: 1, the: 1, and: 1, or: 1, for: 1, with: 1, from: 1, of: 1, to: 1, in: 1, on: 1, is: 1, be: 1, by: 1, at: 1, your: 1, you: 1, this: 1, that: 1, it: 1, as: 1, are: 1, was: 1, were: 1, has: 1, have: 1, had: 1, can: 1, will: 1, built: 1, using: 1 };
+  var deriveTopics = function (r) {
+    if (r.topics && r.topics.length) return r.topics;
+    var src = String(r.description || '').toLowerCase();
+    var seen = {};
+    var out = [];
+    src.replace(/[a-z][a-z0-9'-]*/g, function (tok) {
+      if (tok.length < 3 || STOPWORDS[tok] || seen[tok]) return '';
+      seen[tok] = 1;
+      out.push(tok);
+      return '';
+    });
+    return out.slice(0, 6);
+  };
+
+  // Only https URLs are safe to stamp into an href on a page that is itself
+  // served over https; anything else is either mixed content or a marker that
+  // the value is not a real link. Returns '' for unusable input.
+  var safeUrl = function (u) {
+    if (!u) return '';
+    try {
+      var url = new URL(String(u).trim());
+      if (url.protocol !== 'https:') return '';
+      return url.href;
+    } catch (e) { return ''; }
+  };
+
   var ICON = {
     star: '<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
     fork: '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="5" r="2.2"/><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="7" r="2.2"/><path d="M6 7.2v9.6"/><path d="M18 9.2c0 4.6-4.4 5.4-9 6.3"/></svg>',
@@ -864,7 +888,6 @@ const DATA = /*__PROFILE_DATA__*/null;
   var state = {
     q: '',
     lang: null,
-    topic: null,
     sort: store.get('sort', 'stars'),
     view: store.get('view', 'grid'),
     showArchived: store.get('archived', false),
@@ -882,6 +905,12 @@ const DATA = /*__PROFILE_DATA__*/null;
     }, r);
   });
 
+  // GitHub only populates topics for repos that have them explicitly set, and
+  // most of these do not. Derive them from the repo's own description — which
+  // is API data, not hand-typed — and write them back so the tag row, the
+  // topic cloud, and the topic filter all read the same list.
+  repos.forEach(function (r) { r.topics = deriveTopics(r); });
+
   var totalBytes = DATA.languages.reduce(function (s, l) { return s + l.bytes; }, 0);
   var languages = DATA.languages.map(function (l) {
     return {
@@ -890,15 +919,10 @@ const DATA = /*__PROFILE_DATA__*/null;
     };
   });
 
-  var topicMap = new Map();
-  repos.forEach(function (r) {
-    r.topics.forEach(function (t) { topicMap.set(t, (topicMap.get(t) || 0) + 1); });
-  });
-  var topics = Array.from(topicMap.entries())
-    .map(function (e) { return { name: e[0], count: e[1] }; })
-    .sort(function (a, b) { return b.count - a.count || a.name.localeCompare(b.name); });
-
-  var describe = function (r) { return r.description || r.topics.join(' · ') || ''; };
+  // The description is the source of truth for what a repo is. Falling back
+  // into the derived topics here would repeat the same words the cloud
+  // already shows, so the fallback chain stops at the dash.
+  var describe = function (r) { return r.description || ''; };
 
   var SORTERS = {
     stars: function (a, b) { return b.stars - a.stars || b.pushedAt.localeCompare(a.pushedAt); },
@@ -916,7 +940,6 @@ const DATA = /*__PROFILE_DATA__*/null;
     var out = repos.filter(function (r) {
       if (!state.showArchived && r.archived) return false;
       if (state.lang && r.language !== state.lang) return false;
-      if (state.topic && r.topics.indexOf(state.topic) === -1) return false;
       if (q) {
         var hay = (r.name + ' ' + describe(r) + ' ' + r.topics.join(' ') + ' ' + r.language).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
@@ -1100,10 +1123,9 @@ const DATA = /*__PROFILE_DATA__*/null;
     $('#langChips').innerHTML = html;
 
     // active filter chips
-    var f = [];
+var f = [];
     if (state.lang) f.push({ label: 'LANG: ' + state.lang, clear: 'lang' });
-    if (state.topic) f.push({ label: 'TOPIC: ' + state.topic, clear: 'topic' });
-    if (state.q) f.push({ label: '“' + state.q + '”', clear: 'q' });
+    if (state.q) f.push({ label: '"' + state.q + '"', clear: 'q' });
     $('#activeFilters').innerHTML = f.map(function (x) {
       return '<span class="toolchip">' + esc(x.label) + '<button data-clear="' + x.clear + '" aria-label="Clear filter">×</button></span>';
     }).join('');
@@ -1223,13 +1245,6 @@ const DATA = /*__PROFILE_DATA__*/null;
         '<span class="by">' + fmtBytes(l.bytes) + 'B</span>' +
       '</div>';
     }).join('');
-
-    // topics
-    var maxT = topics.length ? topics[0].count : 1;
-    $('#topicCloud').innerHTML = topics.map(function (t) {
-      var scale = (0.72 + 0.5 * (t.count / maxT)).toFixed(2);
-      return '<button class="topic" data-topic="' + esc(t.name) + '" style="font-size:' + scale + 'em">' + esc(t.name) + '<span class="ct">' + t.count + '</span></button>';
-    }).join('') || '<span class="mono" style="color:var(--faint);font-size:11px">No topics on any repo yet.</span>';
   }
 
   /* ---------- footer ---------- */
@@ -1397,13 +1412,10 @@ const DATA = /*__PROFILE_DATA__*/null;
       if (lr) { state.lang = state.lang === lr.getAttribute('data-lang') ? null : lr.getAttribute('data-lang'); renderExplorer(); syncLegends(); return; }
       var ds = e.target.closest('.donut-seg');
       if (ds) { state.lang = state.lang === ds.getAttribute('data-lang') ? null : ds.getAttribute('data-lang'); renderExplorer(); syncLegends(); return; }
-      var tp = e.target.closest('.topic[data-topic]');
-      if (tp) { state.topic = state.topic === tp.getAttribute('data-topic') ? null : tp.getAttribute('data-topic'); renderExplorer(); syncTopics(); return; }
       var clr = e.target.closest('[data-clear]');
       if (clr) {
         var k = clr.getAttribute('data-clear');
         if (k === 'lang') state.lang = null;
-        if (k === 'topic') state.topic = null;
         if (k === 'q') { state.q = ''; $('#searchInput').value = ''; }
         renderExplorer(); return;
       }
@@ -1417,9 +1429,9 @@ const DATA = /*__PROFILE_DATA__*/null;
         return;
       }
       if (e.target.closest('#clearFilters')) {
-        state.q = ''; state.lang = null; state.topic = null; state.showArchived = false;
+        state.q = ''; state.lang = null; state.showArchived = false;
         $('#searchInput').value = '';
-        renderExplorer(); syncLegends(); syncTopics();
+        renderExplorer(); syncLegends();
       }
     });
 
@@ -1550,9 +1562,6 @@ const DATA = /*__PROFILE_DATA__*/null;
 
   function syncLegends() {
     $$('.legrow').forEach(function (el) { el.classList.toggle('on', el.getAttribute('data-lang') === state.lang); });
-  }
-  function syncTopics() {
-    $$('.topic[data-topic]').forEach(function (el) { el.classList.toggle('on', el.getAttribute('data-topic') === state.topic); });
   }
 
   /* ---------- init ---------- */

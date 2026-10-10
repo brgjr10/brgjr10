@@ -407,9 +407,90 @@ if (!existsSync(sitePath)) {
       if (stamped.generatedAt !== liveData.generatedAt) {
         fail.push('index.html DATA generatedAt does not match data.live.json');
       }
+
+      // Every field a render function reads off DATA must be present on the
+      // stamp, or the page throws at runtime rather than failing here.
+      const get = (o, p) => p.split('.').reduce((a, k) => (a == null ? a : a[k]), o);
+      const requiredPaths = [
+        'profile.login', 'profile.name', 'profile.avatar', 'profile.blog',
+        'profile.location', 'profile.followers', 'profile.createdAt',
+        'totals.publicRepos', 'totals.ownedRepos', 'totals.commits', 'totals.stars',
+        'totals.languages', 'totals.lastPush', 'totals.activeThisMonth',
+        'totals.peakMonth', 'totals.peakMonthCommits', 'totals.starRepos',
+        'languages', 'activity.weeks', 'activity.months', 'repos', 'generatedAt', 'handle'
+      ];
+      for (const p of requiredPaths) {
+        if (get(stamped, p) === undefined) fail.push(`index.html DATA is missing ${p}`);
+      }
+      ok.push('index.html DATA has every field the app reads');
+
+      // totals.publicRepos is GitHub's profile.public_repos, which counts every
+      // public repo the account can see — including ones owned by orgs the
+      // user is a member of. sync.mjs lists only repos the user owns, so the
+      // headline can legitimately exceed the list. What must hold: the headline
+      // matches the profile, the list is never bigger than it, and every listed
+      // repo is public and non-fork.
+      if (stamped.totals.publicRepos !== liveData.profile.publicRepos) {
+        fail.push(`index.html totals.publicRepos is ${stamped.totals.publicRepos} but data.live.json profile.publicRepos is ${liveData.profile.publicRepos}`);
+      } else {
+        ok.push(`totals.publicRepos (${stamped.totals.publicRepos}) matches profile.publicRepos`);
+      }
+      if (stamped.totals.publicRepos < stamped.repos.length) {
+        fail.push(`totals.publicRepos (${stamped.totals.publicRepos}) is less than the ${stamped.repos.length} listed repos`);
+      }
+      const forkInLive = liveData.repos.filter((r) => r.fork).length;
+      const privateInLive = liveData.repos.filter((r) => r.private).length;
+      const unaccounted = stamped.totals.publicRepos - stamped.repos.length - forkInLive - privateInLive;
+      if (unaccounted < 0) {
+        fail.push(`totals.publicRepos is ${stamped.totals.publicRepos} but ${stamped.repos.length} listed + ${forkInLive} forks + ${privateInLive} private = ${stamped.repos.length + forkInLive + privateInLive}`);
+      } else {
+        ok.push(`totals.publicRepos (${stamped.totals.publicRepos}) = ${stamped.repos.length} listed + ${forkInLive} forks + ${privateInLive} private + ${unaccounted} owned elsewhere (org memberships)`);
+      }
+
+      // safeUrl was referenced in the drawer actions but never defined, which
+      // threw a ReferenceError the moment a repo with a homepage was opened.
+      if (!/(?:var|let|const)\s+safeUrl\s*=|function\s+safeUrl\s*\(/.test(site)) {
+        fail.push('index.html references safeUrl but never defines it — opening a repo drawer with a homepage throws ReferenceError');
+      } else {
+        ok.push('safeUrl is defined in index.html');
+      }
+
+      // Extract the inline app script and confirm it parses. A syntax error
+      // ships a broken page; the DATA checks above cannot see it.
+      let appScript = '';
+      for (const sm of site.matchAll(/<script>([\s\S]*?)<\/script>/g)) {
+        if (sm[1].includes('renderHero')) { appScript = sm[1]; break; }
+      }
+      if (appScript) {
+        try {
+          new Function(appScript);
+          ok.push('index.html inline app script parses');
+        } catch (err) {
+          fail.push('index.html inline app script has a syntax error: ' + err.message);
+        }
+      }
     }
   }
   ok.push('index.html stamped from the same data.live.json (account, repos, prose, activity)');
+}
+
+// ---------- 9. workflow cadence ----------
+//
+// The sync workflow's cron must match its own comment, and must not fire more
+// often than the search/commits rate limit allows — each run makes ~118
+// search calls, and hourly firing is a real risk.
+
+const wfPath = join(ROOT, '.github', 'workflows', 'sync-readme.yml');
+if (existsSync(wfPath)) {
+  const wf = readFileSync(wfPath, 'utf8');
+  const cronMatch = wf.match(/cron:\s*'([^']+)'/);
+  if (cronMatch) {
+    if (cronMatch[1] === '7 * * * *') {
+      fail.push('sync-readme.yml cron is hourly but its comment describes a six-hour cadence');
+    } else {
+      ok.push(`sync-readme.yml cadence is ${cronMatch[1]}`);
+    }
+  }
 }
 
 // ---------- report ----------

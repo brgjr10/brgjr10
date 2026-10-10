@@ -29,7 +29,7 @@ on:
   schedule:
     # GitHub runs these on the hour at a jittered minute; 23 past is a low-traffic
     # slot and still lands on all six hours.
-    - cron: '7 * * * *'
+    - cron: '7 */6 * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [readme-sync]

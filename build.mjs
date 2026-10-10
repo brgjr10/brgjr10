@@ -447,61 +447,6 @@ function telemetry() {
   return doc(W, h, b);
 }
 
-// Commit history by month straight from search/commits. The previous version of
-// this card was a hand-written career narrative with fixed dates, which is
-// exactly the kind of claim the API cannot keep honest.
-function history() {
-  const d = D.timeline;
-  const top = 120;
-  const baseline = 268;
-  const chartW = 600;
-  const n = d.months.length;
-  const h = 336;
-
-  let b = backdrop(W, h);
-  b += cardHead(d.kicker, d.heading, `${d.months.reduce((s, m) => s + m.count, 0)} commits · ${d.months.length} months`);
-
-  const gap = 4;
-  const barW = Math.max(6, Math.floor((chartW - (n - 1) * gap) / n));
-  const step = barW + gap;
-  const spanW = step * (n - 1) + barW;
-
-  d.months.forEach((m, i) => {
-    const x = 40 + i * step;
-    const height = Math.round((m.count / d.max) * 108);
-    if (m.count) {
-      b += `<rect x="${r2(x)}" y="${r2(baseline - height)}" width="${r2(barW)}" height="${height}" rx="3" fill="${P('accent')}" opacity="0.85">
-<animate attributeName="y" from="${baseline}" to="${r2(baseline - height)}" dur="0.7s" begin="${r2(0.02 * i)}s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
-<animate attributeName="height" from="0" to="${height}" dur="0.7s" begin="${r2(0.02 * i)}s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/></rect>`;
-    } else {
-      b += R(x, baseline - 3, barW, 3, { rx: 2, fill: P('panel2') });
-    }
-    const [yyyy, mm] = m.month.split('-');
-    b += T(x + barW / 2, baseline + 14, `${mm}/${yyyy.slice(2)}`, {
-      size: 8,
-      fill: P(m.count ? 'muted' : 'faint'),
-      anchor: 'middle'
-    });
-  });
-  b += L(40, baseline + 0.5, 40 + spanW, baseline + 0.5, { stroke: P('border'), op: 0.7 });
-  b += T(40, baseline + 30, `month · peak ${D.snapshot.peakMonth} = ${D.snapshot.peakMonthCommits} commits`, {
-    size: 9,
-    fill: P('faint')
-  });
-
-  // milestones straight off the account
-  b += R(700, 108, 260, 188, { rx: 12, fill: P('panel'), stroke: P('border') });
-  b += T(722, 134, 'MILESTONES', { size: 10, fill: P('accent'), ls: 2 });
-  b += L(722, 146, 938, 146, { stroke: P('borderSoft') });
-  d.milestones.forEach(([label, value], i) => {
-    const y = 172 + i * 32;
-    b += T(722, y, label, { size: 9, fill: P('faint'), ls: 1.4 });
-    b += T(722, y + 14, clip(value, 30), { size: 11, fill: P('text') });
-  });
-
-  return doc(W, h, b);
-}
-
 function stack() {
   const d = D.stack;
   const rowH = 28;
@@ -530,36 +475,6 @@ function stack() {
     }
     b += T(915, base, `${row.pct}%`, { size: 10.5, fill: P(row.color), anchor: 'end' });
     b += T(960, base, `${fmtBytes(row.bytes)}B`, { size: 9.5, fill: P('faint'), anchor: 'end' });
-  });
-
-  return doc(W, h, b);
-}
-
-function footer() {
-  const d = D.footer;
-  const h = 232;
-  let b = backdrop(W, h);
-  b += T(40, 54, 'LAST SYNC', { size: 10.5, fill: P('accent'), ls: 2 });
-  b += L(40, 66, 600, 66, { op: 0.6 });
-
-  d.rows.forEach(([label, value], i) => {
-    const y = 96 + i * 26;
-    b += CIR(46, y - 4, 3, { fill: P('accent') });
-    b += T(60, y, label, { size: 9.5, fill: P('accent'), ls: 1.8 });
-    b += T(208, y, clip(value, 56), { size: 11.5, fill: P('text'), op: 0.9 });
-  });
-
-  b += R(640, 78, 320, 108, { rx: 12, fill: P('panel'), stroke: P('border') });
-  b += T(660, 104, 'HANDLE', { size: 9.5, fill: P('faint'), ls: 2 });
-  b += T(660, 130, `@${D.profile.handle}`, { size: 16, fill: P('accent'), weight: 600 });
-  b += T(660, 152, `${D.profile.name} · ${D.profile.location}`, { size: 10.5, fill: P('muted') });
-  b += T(660, 172, clip(D.profile.portfolio.replace('https://', ''), 44), { size: 10.5, fill: P('muted') });
-
-  b += L(40, 202, 960, 202, { op: 0.7 });
-  b += T(500, 222, `© ${new Date(D.snapshot.generatedAt).getUTCFullYear()} ${D.profile.handle} · ${d.sign}`, {
-    size: 10,
-    fill: P('faint'),
-    anchor: 'middle'
   });
 
   return doc(W, h, b);

@@ -235,26 +235,7 @@ export const telemetry = {
   activeWeeks: live.activity.weeks.filter((w) => w.count > 0).length
 };
 
-// ---------- 04 the route ----------
-
-// The old card was a hand-written career narrative — four invented phases with
-// fixed dates, impossible to keep true. It is now the commit history the search
-// API actually returns, bucketed by month from account creation, with the
-// account-age milestones GitHub can verify laid over it.
-export const timeline = {
-  kicker: '04 / the route',
-  heading: 'COMMIT HISTORY',
-  months: live.activity.months,
-  max: Math.max(1, ...live.activity.months.map((m) => m.count)),
-  milestones: [
-    ['ACCOUNT CREATED', since],
-    ['FIRST COMMIT MONTH', live.activity.months.find((m) => m.count > 0)?.month || '—'],
-    ['BUSIEST MONTH', `${monthLabel(live.totals.peakMonth)} · ${live.totals.peakMonthCommits}`],
-    ['THIS MONTH', `${live.totals.activeThisMonth} commits`]
-  ]
-};
-
-// ---------- 05 stack ----------
+// ---------- stack ----------
 
 // Language mix straight from the aggregated /languages endpoint. Byte share is
 // shown as fetched, including HTML's large share — that is what the repos
@@ -271,20 +252,6 @@ export const stack = {
   }))
 };
 
-// ---------- footer ----------
-
-// Was a hand-typed "currently building / running / learning" block. Replaced
-// with facts the API can restate tomorrow and still be right.
-export const footer = {
-  rows: [
-    ['LAST PUSH', `${snapshot.lastPushRel} · ${live.totals.lastPush ? live.totals.lastPush.slice(0, 10) : '—'}`],
-    ['COMMITS THIS MONTH', `${live.totals.activeThisMonth} of ${live.totals.commits} total`],
-    ['BUSIEST MONTH', `${monthLabel(live.totals.peakMonth)} · ${live.totals.peakMonthCommits} commits`],
-    ['GENERATED', `${snapshot.taken} from the GitHub API`]
-  ],
-  sign: 'every card here is a generated SVG · regenerated on every commit'
-};
-
 // ---------- the prose / data boundary ----------
 
 // Every hand-written string that reaches a card. verify.mjs exempts exactly
@@ -294,12 +261,13 @@ export const footer = {
 //
 // Digits are allowed to appear in these strings ("Raspberry Pi 5") because they
 // are part of the writing, not a count of something GitHub reports.
+const SIGN = 'every card here is a generated SVG · regenerated on every commit';
 export const PROSE = [
   TAGLINE,
   ...BLURB,
   ...BODY.flat(),
   ...RIG,
-  footer.sign
+  SIGN
 ];
 
 // ---------- the portfolio site ----------
