@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:54:36.015Z",
+  "generatedAt": "2026-10-18T15:48:13.073Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-18T05:57:14Z",
+    "lastPush": "2026-10-18T10:54:37Z",
     "activeThisMonth": 168,
     "peakMonth": "2026-10",
     "peakMonthCommits": 168
@@ -34,7 +34,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23333336,
+      "bytes": 23333334,
       "pct": 88
     },
     {
@@ -300,6 +300,32 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-18T10:54:37Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 895,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 185022,
+        "JavaScript": 69088
+      },
+      "commits": 23,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "radioapp",
       "description": "OpenMHz radio scanner activity monitor and audio streaming app. Built for trunked radio systems with talkgroup filtering, history browsing, map plotting, and Web Audio EQ.",
       "language": "JavaScript",
@@ -326,32 +352,6 @@
       },
       "commits": 25,
       "readmeImage": "https://github.com/user-attachments/assets/be48d112-3ccd-4e85-8195-92a4517f994d"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-18T04:19:31Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 841,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 185024,
-        "JavaScript": 69088
-      },
-      "commits": 23,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "ez-resolution-changer",
