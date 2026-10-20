@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T22:18:12.230Z",
+  "generatedAt": "2026-10-20T04:38:37.511Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 32,
     "ownedRepos": 30,
-    "commits": 493,
+    "commits": 502,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,30 +26,30 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-18T20:31:40Z",
-    "activeThisMonth": 168,
+    "lastPush": "2026-10-20T04:09:42Z",
+    "activeThisMonth": 177,
     "peakMonth": "2026-10",
-    "peakMonthCommits": 168
+    "peakMonthCommits": 177
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23333334,
-      "pct": 88
+      "bytes": 23333335,
+      "pct": 87.9
     },
     {
       "name": "JavaScript",
-      "bytes": 1866661,
+      "bytes": 1867786,
       "pct": 7
     },
     {
       "name": "Python",
-      "bytes": 542637,
-      "pct": 2
+      "bytes": 559906,
+      "pct": 2.1
     },
     {
       "name": "CSS",
-      "bytes": 435830,
+      "bytes": 437789,
       "pct": 1.6
     },
     {
@@ -91,68 +91,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-07-06",
+        "end": "2026-07-07",
         "count": 0
       },
       {
-        "end": "2026-07-13",
+        "end": "2026-07-14",
         "count": 0
       },
       {
-        "end": "2026-07-20",
+        "end": "2026-07-21",
         "count": 22
       },
       {
-        "end": "2026-07-27",
+        "end": "2026-07-28",
         "count": 12
       },
       {
-        "end": "2026-08-03",
+        "end": "2026-08-04",
         "count": 41
       },
       {
-        "end": "2026-08-10",
-        "count": 0
-      },
-      {
-        "end": "2026-08-17",
+        "end": "2026-08-11",
         "count": 3
       },
       {
-        "end": "2026-08-24",
-        "count": 68
-      },
-      {
-        "end": "2026-08-31",
-        "count": 32
-      },
-      {
-        "end": "2026-09-07",
+        "end": "2026-08-18",
         "count": 0
       },
       {
-        "end": "2026-09-14",
+        "end": "2026-08-25",
+        "count": 94
+      },
+      {
+        "end": "2026-09-01",
+        "count": 6
+      },
+      {
+        "end": "2026-09-08",
         "count": 0
       },
       {
-        "end": "2026-09-21",
+        "end": "2026-09-15",
         "count": 0
       },
       {
-        "end": "2026-09-28",
-        "count": 23
+        "end": "2026-09-22",
+        "count": 0
       },
       {
-        "end": "2026-10-05",
-        "count": 155
+        "end": "2026-09-29",
+        "count": 42
       },
       {
-        "end": "2026-10-12",
-        "count": 41
+        "end": "2026-10-06",
+        "count": 151
       },
       {
-        "end": "2026-10-19",
-        "count": 2
+        "end": "2026-10-13",
+        "count": 26
+      },
+      {
+        "end": "2026-10-20",
+        "count": 11
       }
     ],
     "months": [
@@ -210,7 +210,7 @@
       },
       {
         "month": "2026-10",
-        "count": 168
+        "count": 177
       }
     ]
   },
@@ -300,6 +300,33 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "youtube-deskop",
+      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T18:37:02Z",
+      "pushedAt": "2026-10-20T04:09:42Z",
+      "url": "https://github.com/brgjr10/youtube-deskop",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 268,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "CSS": 69464,
+        "JavaScript": 34693,
+        "Python": 17269
+      },
+      "commits": 24,
+      "readmeImage": "https://github.com/user-attachments/assets/6d181f34-d57a-468f-8235-20187e17dbfc"
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -307,19 +334,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-18T20:31:40Z",
+      "pushedAt": "2026-10-19T22:18:13Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 941,
+      "size": 998,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 185022,
+        "HTML": 185023,
         "JavaScript": 69088
       },
       "commits": 23,
@@ -455,32 +482,6 @@
       },
       "commits": 4,
       "readmeImage": "https://github.com/user-attachments/assets/8b6bd03d-0320-42e7-8adb-b61e2fc1fc9b"
-    },
-    {
-      "name": "youtube-deskop",
-      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
-      "language": "CSS",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-06T14:05:55Z",
-      "url": "https://github.com/brgjr10/youtube-deskop",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 268,
-      "openIssues": 0,
-      "license": "MIT",
-      "homepage": "",
-      "watchers": 0,
-      "hasPages": false,
-      "languages": {
-        "CSS": 67505,
-        "JavaScript": 33568
-      },
-      "commits": 15,
-      "readmeImage": "https://github.com/user-attachments/assets/6d181f34-d57a-468f-8235-20187e17dbfc"
     },
     {
       "name": "drawpyo",
