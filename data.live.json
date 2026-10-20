@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T11:25:04.116Z",
+  "generatedAt": "2026-10-20T21:33:05.871Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-20T04:41:49Z",
+    "lastPush": "2026-10-20T11:25:05Z",
     "activeThisMonth": 178,
     "peakMonth": "2026-10",
     "peakMonthCommits": 178
@@ -34,7 +34,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23333356,
+      "bytes": 23333363,
       "pct": 87.9
     },
     {
@@ -300,6 +300,32 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-20T11:25:05Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 1055,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 185051,
+        "JavaScript": 69088
+      },
+      "commits": 23,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "youtube-deskop",
       "description": "A native YouTube player for Windows & Linux built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
       "language": "CSS",
@@ -325,32 +351,6 @@
       },
       "commits": 25,
       "readmeImage": "https://github.com/user-attachments/assets/2f03f14f-3c9d-4624-a015-93e6d8edca21"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-20T04:38:38Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 1052,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 185044,
-        "JavaScript": 69088
-      },
-      "commits": 23,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "radioapp",
