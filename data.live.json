@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T04:38:37.511Z",
+  "generatedAt": "2026-10-20T11:25:04.116Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 32,
     "ownedRepos": 30,
-    "commits": 502,
+    "commits": 503,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,15 +26,15 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-20T04:09:42Z",
-    "activeThisMonth": 177,
+    "lastPush": "2026-10-20T04:41:49Z",
+    "activeThisMonth": 178,
     "peakMonth": "2026-10",
-    "peakMonthCommits": 177
+    "peakMonthCommits": 178
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23333335,
+      "bytes": 23333356,
       "pct": 87.9
     },
     {
@@ -152,7 +152,7 @@
       },
       {
         "end": "2026-10-20",
-        "count": 11
+        "count": 12
       }
     ],
     "months": [
@@ -210,7 +210,7 @@
       },
       {
         "month": "2026-10",
-        "count": 177
+        "count": 178
       }
     ]
   },
@@ -301,18 +301,18 @@
     },
     {
       "name": "youtube-deskop",
-      "description": "A native YouTube player for Windows built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
+      "description": "A native YouTube player for Windows & Linux built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
       "language": "CSS",
       "stars": 0,
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-20T04:09:42Z",
+      "pushedAt": "2026-10-20T04:41:49Z",
       "url": "https://github.com/brgjr10/youtube-deskop",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 268,
+      "size": 334,
       "openIssues": 0,
       "license": "MIT",
       "homepage": "",
@@ -323,8 +323,8 @@
         "JavaScript": 34693,
         "Python": 17269
       },
-      "commits": 24,
-      "readmeImage": "https://github.com/user-attachments/assets/6d181f34-d57a-468f-8235-20187e17dbfc"
+      "commits": 25,
+      "readmeImage": "https://github.com/user-attachments/assets/2f03f14f-3c9d-4624-a015-93e6d8edca21"
     },
     {
       "name": "brgjr10",
@@ -334,19 +334,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-19T22:18:13Z",
+      "pushedAt": "2026-10-20T04:38:38Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 998,
+      "size": 1052,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 185023,
+        "HTML": 185044,
         "JavaScript": 69088
       },
       "commits": 23,
