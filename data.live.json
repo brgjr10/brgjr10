@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T04:31:41.641Z",
+  "generatedAt": "2026-10-21T17:06:05.414Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-21T00:49:20Z",
+    "lastPush": "2026-10-21T04:31:42Z",
     "activeThisMonth": 259,
     "peakMonth": "2026-10",
     "peakMonthCommits": 259
@@ -34,7 +34,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23625076,
+      "bytes": 23626166,
       "pct": 85.5
     },
     {
@@ -300,6 +300,32 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-21T04:31:42Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 1165,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 186143,
+        "JavaScript": 69088
+      },
+      "commits": 23,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "tampermonkey-scripts",
       "description": "My personal-use collection of Tampermonkey userscripts.",
       "language": "JavaScript",
@@ -377,32 +403,6 @@
       },
       "commits": 68,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/dispo-deals/master/readme_cover.jpg"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-20T21:33:07Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 1107,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 185053,
-        "JavaScript": 69088
-      },
-      "commits": 23,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "radioapp",
