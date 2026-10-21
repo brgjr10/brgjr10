@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T21:33:05.871Z",
+  "generatedAt": "2026-10-21T04:31:41.641Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -8,17 +8,17 @@
     "name": "Brodie Grant",
     "location": "Ohio, US",
     "bio": "Full-Stack Developer & Operations Automation Engineer",
-    "blog": "https://brgjr10.github.io/",
+    "blog": "https://brgjr10.github.io/brgjr10/",
     "avatar": "https://avatars.githubusercontent.com/u/232129234?v=4",
     "createdAt": "2025-09-13T23:57:15Z",
     "followers": 1,
     "following": 0,
-    "publicRepos": 32
+    "publicRepos": 34
   },
   "totals": {
-    "publicRepos": 32,
-    "ownedRepos": 30,
-    "commits": 503,
+    "publicRepos": 34,
+    "ownedRepos": 32,
+    "commits": 584,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,26 +26,26 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-20T11:25:05Z",
-    "activeThisMonth": 178,
+    "lastPush": "2026-10-21T00:49:20Z",
+    "activeThisMonth": 259,
     "peakMonth": "2026-10",
-    "peakMonthCommits": 178
+    "peakMonthCommits": 259
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23333363,
-      "pct": 87.9
+      "bytes": 23625076,
+      "pct": 85.5
     },
     {
       "name": "JavaScript",
-      "bytes": 1867786,
-      "pct": 7
+      "bytes": 1883365,
+      "pct": 6.8
     },
     {
       "name": "Python",
-      "bytes": 559906,
-      "pct": 2.1
+      "bytes": 1336458,
+      "pct": 4.8
     },
     {
       "name": "CSS",
@@ -59,7 +59,7 @@
     },
     {
       "name": "PowerShell",
-      "bytes": 68360,
+      "bytes": 78211,
       "pct": 0.3
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 10317,
+      "bytes": 11348,
       "pct": 0
     },
     {
@@ -91,68 +91,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-07-07",
+        "end": "2026-07-08",
         "count": 0
       },
       {
-        "end": "2026-07-14",
+        "end": "2026-07-15",
+        "count": 2
+      },
+      {
+        "end": "2026-07-22",
+        "count": 32
+      },
+      {
+        "end": "2026-07-29",
         "count": 0
       },
       {
-        "end": "2026-07-21",
-        "count": 22
-      },
-      {
-        "end": "2026-07-28",
-        "count": 12
-      },
-      {
-        "end": "2026-08-04",
+        "end": "2026-08-05",
         "count": 41
       },
       {
-        "end": "2026-08-11",
+        "end": "2026-08-12",
         "count": 3
       },
       {
-        "end": "2026-08-18",
+        "end": "2026-08-19",
         "count": 0
       },
       {
-        "end": "2026-08-25",
+        "end": "2026-08-26",
         "count": 94
       },
       {
-        "end": "2026-09-01",
+        "end": "2026-09-02",
         "count": 6
       },
       {
-        "end": "2026-09-08",
+        "end": "2026-09-09",
         "count": 0
       },
       {
-        "end": "2026-09-15",
+        "end": "2026-09-16",
         "count": 0
       },
       {
-        "end": "2026-09-22",
+        "end": "2026-09-23",
         "count": 0
       },
       {
-        "end": "2026-09-29",
-        "count": 42
+        "end": "2026-09-30",
+        "count": 53
       },
       {
-        "end": "2026-10-06",
-        "count": 151
+        "end": "2026-10-07",
+        "count": 145
       },
       {
-        "end": "2026-10-13",
-        "count": 26
+        "end": "2026-10-14",
+        "count": 89
       },
       {
-        "end": "2026-10-20",
-        "count": 12
+        "end": "2026-10-21",
+        "count": 25
       }
     ],
     "months": [
@@ -210,7 +210,7 @@
       },
       {
         "month": "2026-10",
-        "count": 178
+        "count": 259
       }
     ]
   },
@@ -300,30 +300,29 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
+      "name": "tampermonkey-scripts",
+      "description": "My personal-use collection of Tampermonkey userscripts.",
+      "language": "JavaScript",
       "stars": 0,
       "forks": 0,
       "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-20T11:25:05Z",
-      "url": "https://github.com/brgjr10/brgjr10",
+      "createdAt": "2026-07-22T15:18:45Z",
+      "pushedAt": "2026-10-21T00:49:20Z",
+      "url": "https://github.com/brgjr10/tampermonkey-scripts",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1055,
+      "size": 76,
       "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "license": "MIT",
+      "homepage": "",
       "watchers": 0,
-      "hasPages": true,
+      "hasPages": false,
       "languages": {
-        "HTML": 185051,
-        "JavaScript": 69088
+        "JavaScript": 81551
       },
-      "commits": 23,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+      "commits": 7,
+      "readmeImage": ""
     },
     {
       "name": "youtube-deskop",
@@ -333,12 +332,12 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-20T04:41:49Z",
+      "pushedAt": "2026-10-21T00:08:11Z",
       "url": "https://github.com/brgjr10/youtube-deskop",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 334,
+      "size": 357,
       "openIssues": 0,
       "license": "MIT",
       "homepage": "",
@@ -346,11 +345,64 @@
       "hasPages": false,
       "languages": {
         "CSS": 69464,
-        "JavaScript": 34693,
+        "JavaScript": 44037,
         "Python": 17269
       },
-      "commits": 25,
-      "readmeImage": "https://github.com/user-attachments/assets/2f03f14f-3c9d-4624-a015-93e6d8edca21"
+      "commits": 31,
+      "readmeImage": "https://github.com/user-attachments/assets/446209c0-cef3-4105-8cd4-fcf88c6c2dd6"
+    },
+    {
+      "name": "dispo-deals",
+      "description": "A self-hosted multi-store deals dashboard (Built for dispensaries)",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-12T13:54:20Z",
+      "pushedAt": "2026-10-20T23:10:44Z",
+      "url": "https://github.com/brgjr10/dispo-deals",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 4849,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Python": 776552,
+        "HTML": 291711,
+        "Dockerfile": 1031
+      },
+      "commits": 68,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/dispo-deals/master/readme_cover.jpg"
+    },
+    {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-20T21:33:07Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 1107,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 185053,
+        "JavaScript": 69088
+      },
+      "commits": 23,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "radioapp",
@@ -434,31 +486,6 @@
       "readmeImage": "https://github.com/user-attachments/assets/46de530c-9964-4e38-a281-031145aded95"
     },
     {
-      "name": "tampermonkey-scripts",
-      "description": "My personal-use collection of Tampermonkey userscripts.",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-07-22T15:18:45Z",
-      "pushedAt": "2026-10-09T02:16:42Z",
-      "url": "https://github.com/brgjr10/tampermonkey-scripts",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 40,
-      "openIssues": 0,
-      "license": "MIT",
-      "homepage": "",
-      "watchers": 0,
-      "hasPages": false,
-      "languages": {
-        "JavaScript": 79039
-      },
-      "commits": 5,
-      "readmeImage": ""
-    },
-    {
       "name": "dev-nuke-windows",
       "description": "A nuclear option for clearing developer bloat on Windows in one shot.",
       "language": "Batchfile",
@@ -482,6 +509,32 @@
       },
       "commits": 4,
       "readmeImage": "https://github.com/user-attachments/assets/8b6bd03d-0320-42e7-8adb-b61e2fc1fc9b"
+    },
+    {
+      "name": "HASSIO-Rainmeter-Widget",
+      "description": "A Home Assistant widget built for Rainmeter. ",
+      "language": "PowerShell",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-06T18:29:19Z",
+      "pushedAt": "2026-10-08T00:15:13Z",
+      "url": "https://github.com/brgjr10/HASSIO-Rainmeter-Widget",
+      "private": false,
+      "archived": true,
+      "defaultBranch": "main",
+      "size": 202,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "PowerShell": 9851,
+        "JavaScript": 3723
+      },
+      "commits": 5,
+      "readmeImage": ""
     },
     {
       "name": "drawpyo",
@@ -800,7 +853,7 @@
       "pushedAt": "2026-08-25T17:01:34Z",
       "url": "https://github.com/brgjr10/DeadVisionAi",
       "private": false,
-      "archived": false,
+      "archived": true,
       "defaultBranch": "master",
       "size": 1889,
       "openIssues": 1,
@@ -856,7 +909,7 @@
       "pushedAt": "2026-08-25T17:01:25Z",
       "url": "https://github.com/brgjr10/FactorApp",
       "private": false,
-      "archived": false,
+      "archived": true,
       "defaultBranch": "master",
       "size": 59,
       "openIssues": 1,
@@ -884,7 +937,7 @@
       "pushedAt": "2026-08-25T17:01:21Z",
       "url": "https://github.com/brgjr10/Grocery_List",
       "private": false,
-      "archived": false,
+      "archived": true,
       "defaultBranch": "master",
       "size": 11,
       "openIssues": 0,
@@ -987,7 +1040,7 @@
       "pushedAt": "2026-08-25T17:00:08Z",
       "url": "https://github.com/brgjr10/ModelRouter",
       "private": false,
-      "archived": false,
+      "archived": true,
       "defaultBranch": "main",
       "size": 112,
       "openIssues": 0,
