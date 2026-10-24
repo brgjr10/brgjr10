@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T04:25:38.598Z",
+  "generatedAt": "2026-10-24T10:48:39.464Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 34,
     "ownedRepos": 32,
-    "commits": 584,
+    "commits": 600,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,21 +26,21 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-23T21:21:02Z",
-    "activeThisMonth": 259,
+    "lastPush": "2026-10-24T10:13:19Z",
+    "activeThisMonth": 277,
     "peakMonth": "2026-10",
-    "peakMonthCommits": 259
+    "peakMonthCommits": 277
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23626169,
-      "pct": 85.5
+      "bytes": 23621654,
+      "pct": 85.4
     },
     {
       "name": "JavaScript",
-      "bytes": 1883365,
-      "pct": 6.8
+      "bytes": 1903657,
+      "pct": 6.9
     },
     {
       "name": "Python",
@@ -49,7 +49,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 437789,
+      "bytes": 446006,
       "pct": 1.6
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 11348,
+      "bytes": 11478,
       "pct": 0
     },
     {
@@ -108,7 +108,7 @@
       },
       {
         "end": "2026-08-08",
-        "count": 41
+        "count": 40
       },
       {
         "end": "2026-08-15",
@@ -120,7 +120,7 @@
       },
       {
         "end": "2026-08-29",
-        "count": 100
+        "count": 99
       },
       {
         "end": "2026-09-05",
@@ -152,7 +152,7 @@
       },
       {
         "end": "2026-10-24",
-        "count": 25
+        "count": 43
       }
     ],
     "months": [
@@ -202,7 +202,7 @@
       },
       {
         "month": "2026-08",
-        "count": 144
+        "count": 142
       },
       {
         "month": "2026-09",
@@ -210,7 +210,7 @@
       },
       {
         "month": "2026-10",
-        "count": 259
+        "count": 277
       }
     ]
   },
@@ -300,6 +300,35 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "WFProj",
+      "description": "Warframe Part Tracker — interactive tracker with live market data.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:50Z",
+      "pushedAt": "2026-10-24T10:13:19Z",
+      "url": "https://github.com/brgjr10/WFProj",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 68513,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 3351881,
+        "JavaScript": 30054,
+        "CSS": 8217,
+        "Python": 6068,
+        "Dockerfile": 130
+      },
+      "commits": 20,
+      "readmeImage": ""
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -307,12 +336,12 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-23T21:21:02Z",
+      "pushedAt": "2026-10-24T04:25:39Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1471,
+      "size": 1473,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
@@ -962,7 +991,7 @@
       "pushedAt": "2026-08-25T17:01:03Z",
       "url": "https://github.com/brgjr10/WFProfileManager",
       "private": false,
-      "archived": false,
+      "archived": true,
       "defaultBranch": "main",
       "size": 95,
       "openIssues": 0,
@@ -976,33 +1005,6 @@
       },
       "commits": 4,
       "readmeImage": "https://github.com/user-attachments/assets/f6f788c5-3580-4529-add6-c2d81de95b50"
-    },
-    {
-      "name": "WFProj",
-      "description": "Warframe Part Tracker — interactive tracker with live market data.",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-07-22T15:18:50Z",
-      "pushedAt": "2026-08-25T17:00:59Z",
-      "url": "https://github.com/brgjr10/WFProj",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 68389,
-      "openIssues": 1,
-      "license": "MIT",
-      "homepage": "",
-      "watchers": 0,
-      "hasPages": false,
-      "languages": {
-        "HTML": 3356396,
-        "JavaScript": 9762,
-        "Python": 6068
-      },
-      "commits": 4,
-      "readmeImage": "https://github.com/user-attachments/assets/f057c0c1-c3d7-4342-94de-6ea621707220"
     },
     {
       "name": "strudel-ui",
