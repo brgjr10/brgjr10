@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T10:48:39.464Z",
+  "generatedAt": "2026-10-24T15:51:11.638Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -26,7 +26,7 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-24T10:13:19Z",
+    "lastPush": "2026-10-24T10:48:40Z",
     "activeThisMonth": 277,
     "peakMonth": "2026-10",
     "peakMonthCommits": 277
@@ -34,7 +34,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23621654,
+      "bytes": 23621602,
       "pct": 85.4
     },
     {
@@ -300,6 +300,32 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-10-24T10:48:40Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 1529,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 186094,
+        "JavaScript": 69088
+      },
+      "commits": 23,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "WFProj",
       "description": "Warframe Part Tracker — interactive tracker with live market data.",
       "language": "HTML",
@@ -312,7 +338,7 @@
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 68513,
+      "size": 68520,
       "openIssues": 0,
       "license": "",
       "homepage": "",
@@ -327,32 +353,6 @@
       },
       "commits": 20,
       "readmeImage": ""
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-24T04:25:39Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 1473,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 186146,
-        "JavaScript": 69088
-      },
-      "commits": 23,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "tampermonkey-scripts",
