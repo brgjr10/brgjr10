@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T20:39:23.735Z",
+  "generatedAt": "2026-10-25T04:29:30.533Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 34,
     "ownedRepos": 32,
-    "commits": 600,
+    "commits": 611,
     "stars": 3,
     "starRepos": [
       "satellite-app",
@@ -26,36 +26,36 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-24T15:51:12Z",
-    "activeThisMonth": 277,
+    "lastPush": "2026-10-25T03:42:30Z",
+    "activeThisMonth": 288,
     "peakMonth": "2026-10",
-    "peakMonthCommits": 277
+    "peakMonthCommits": 288
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 23621600,
-      "pct": 85.4
+      "bytes": 26057631,
+      "pct": 86.5
     },
     {
       "name": "JavaScript",
-      "bytes": 1903657,
-      "pct": 6.9
+      "bytes": 1918543,
+      "pct": 6.4
     },
     {
       "name": "Python",
-      "bytes": 1336458,
-      "pct": 4.8
+      "bytes": 1336463,
+      "pct": 4.4
     },
     {
       "name": "CSS",
       "bytes": 446006,
-      "pct": 1.6
+      "pct": 1.5
     },
     {
       "name": "TypeScript",
       "bytes": 250332,
-      "pct": 0.9
+      "pct": 0.8
     },
     {
       "name": "PowerShell",
@@ -91,68 +91,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-07-11",
+        "end": "2026-07-12",
         "count": 0
       },
       {
-        "end": "2026-07-18",
+        "end": "2026-07-19",
         "count": 22
       },
       {
-        "end": "2026-07-25",
+        "end": "2026-07-26",
         "count": 12
       },
       {
-        "end": "2026-08-01",
-        "count": 0
-      },
-      {
-        "end": "2026-08-08",
+        "end": "2026-08-02",
         "count": 40
       },
       {
-        "end": "2026-08-15",
+        "end": "2026-08-09",
+        "count": 0
+      },
+      {
+        "end": "2026-08-16",
         "count": 3
       },
       {
-        "end": "2026-08-22",
+        "end": "2026-08-23",
+        "count": 20
+      },
+      {
+        "end": "2026-08-30",
+        "count": 79
+      },
+      {
+        "end": "2026-09-06",
         "count": 0
       },
       {
-        "end": "2026-08-29",
-        "count": 99
-      },
-      {
-        "end": "2026-09-05",
+        "end": "2026-09-13",
         "count": 0
       },
       {
-        "end": "2026-09-12",
+        "end": "2026-09-20",
         "count": 0
       },
       {
-        "end": "2026-09-19",
+        "end": "2026-09-27",
         "count": 0
       },
       {
-        "end": "2026-09-26",
-        "count": 0
+        "end": "2026-10-04",
+        "count": 157
       },
       {
-        "end": "2026-10-03",
-        "count": 107
+        "end": "2026-10-11",
+        "count": 62
       },
       {
-        "end": "2026-10-10",
-        "count": 107
-      },
-      {
-        "end": "2026-10-17",
+        "end": "2026-10-18",
         "count": 73
       },
       {
-        "end": "2026-10-24",
-        "count": 43
+        "end": "2026-10-25",
+        "count": 49
       }
     ],
     "months": [
@@ -210,7 +210,7 @@
       },
       {
         "month": "2026-10",
-        "count": 277
+        "count": 288
       }
     ]
   },
@@ -300,6 +300,35 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "WFProj",
+      "description": "Warframe Part Tracker — interactive tracker with live market data.",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-22T15:18:50Z",
+      "pushedAt": "2026-10-25T03:42:30Z",
+      "url": "https://github.com/brgjr10/WFProj",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 68776,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "HTML": 5787912,
+        "JavaScript": 44940,
+        "CSS": 8217,
+        "Python": 6073,
+        "Dockerfile": 130
+      },
+      "commits": 31,
+      "readmeImage": ""
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -307,12 +336,12 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-24T15:51:12Z",
+      "pushedAt": "2026-10-24T20:39:25Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1580,
+      "size": 1626,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
@@ -324,35 +353,6 @@
       },
       "commits": 23,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
-    },
-    {
-      "name": "WFProj",
-      "description": "Warframe Part Tracker — interactive tracker with live market data.",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-07-22T15:18:50Z",
-      "pushedAt": "2026-10-24T10:13:19Z",
-      "url": "https://github.com/brgjr10/WFProj",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 68520,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "",
-      "watchers": 0,
-      "hasPages": false,
-      "languages": {
-        "HTML": 3351881,
-        "JavaScript": 30054,
-        "CSS": 8217,
-        "Python": 6068,
-        "Dockerfile": 130
-      },
-      "commits": 20,
-      "readmeImage": ""
     },
     {
       "name": "tampermonkey-scripts",
