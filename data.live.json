@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T21:25:55.639Z",
+  "generatedAt": "2026-11-01T05:50:42.314Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 34,
     "ownedRepos": 32,
-    "commits": 616,
+    "commits": 631,
     "stars": 4,
     "starRepos": [
       "radioapp",
@@ -27,20 +27,20 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-10-31T12:12:22Z",
-    "activeThisMonth": 293,
+    "lastPush": "2026-11-01T03:08:14Z",
+    "activeThisMonth": 15,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26057628,
+      "bytes": 26057541,
       "pct": 86.5
     },
     {
       "name": "JavaScript",
-      "bytes": 1925027,
+      "bytes": 1927354,
       "pct": 6.4
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 446006,
+      "bytes": 448010,
       "pct": 1.5
     },
     {
@@ -92,68 +92,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-07-18",
+        "end": "2026-07-19",
         "count": 22
       },
       {
-        "end": "2026-07-25",
+        "end": "2026-07-26",
         "count": 12
       },
       {
-        "end": "2026-08-01",
-        "count": 0
-      },
-      {
-        "end": "2026-08-08",
+        "end": "2026-08-02",
         "count": 40
       },
       {
-        "end": "2026-08-15",
+        "end": "2026-08-09",
+        "count": 0
+      },
+      {
+        "end": "2026-08-16",
         "count": 3
       },
       {
-        "end": "2026-08-22",
+        "end": "2026-08-23",
+        "count": 20
+      },
+      {
+        "end": "2026-08-30",
+        "count": 79
+      },
+      {
+        "end": "2026-09-06",
         "count": 0
       },
       {
-        "end": "2026-08-29",
-        "count": 99
-      },
-      {
-        "end": "2026-09-05",
+        "end": "2026-09-13",
         "count": 0
       },
       {
-        "end": "2026-09-12",
+        "end": "2026-09-20",
         "count": 0
       },
       {
-        "end": "2026-09-19",
+        "end": "2026-09-27",
         "count": 0
       },
       {
-        "end": "2026-09-26",
-        "count": 0
+        "end": "2026-10-04",
+        "count": 157
       },
       {
-        "end": "2026-10-03",
-        "count": 107
+        "end": "2026-10-11",
+        "count": 62
       },
       {
-        "end": "2026-10-10",
-        "count": 107
-      },
-      {
-        "end": "2026-10-17",
+        "end": "2026-10-18",
         "count": 73
       },
       {
-        "end": "2026-10-24",
-        "count": 46
+        "end": "2026-10-25",
+        "count": 54
       },
       {
-        "end": "2026-10-31",
-        "count": 13
+        "end": "2026-11-01",
+        "count": 15
       }
     ],
     "months": [
@@ -212,6 +212,10 @@
       {
         "month": "2026-10",
         "count": 293
+      },
+      {
+        "month": "2026-11",
+        "count": 15
       }
     ]
   },
@@ -224,24 +228,24 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-07-22T15:18:37Z",
-      "pushedAt": "2026-10-18T05:57:14Z",
+      "pushedAt": "2026-11-01T02:05:37Z",
       "url": "https://github.com/brgjr10/radioapp",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 174,
-      "openIssues": 2,
+      "size": 236,
+      "openIssues": 0,
       "license": "MIT",
       "homepage": "",
       "watchers": 1,
       "hasPages": false,
       "languages": {
-        "JavaScript": 198951,
-        "CSS": 19731,
+        "JavaScript": 198774,
+        "CSS": 19755,
         "HTML": 6829,
         "Dockerfile": 775
       },
-      "commits": 25,
+      "commits": 29,
       "readmeImage": "https://github.com/user-attachments/assets/be48d112-3ccd-4e85-8195-92a4517f994d"
     },
     {
@@ -329,6 +333,34 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "issuez",
+      "description": "The quick start, full account based GitHub Issue dashboard. ",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-24T20:11:05Z",
+      "pushedAt": "2026-11-01T03:08:14Z",
+      "url": "https://github.com/brgjr10/issuez",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 305,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://brgjr10.github.io/issuez/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "JavaScript": 134590,
+        "CSS": 36456,
+        "Dockerfile": 2625,
+        "HTML": 1401
+      },
+      "commits": 63,
+      "readmeImage": "https://github.com/user-attachments/assets/6859a83c-9541-4a38-939b-59ef5084809f"
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -336,19 +368,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-31T12:12:22Z",
+      "pushedAt": "2026-10-31T21:25:56Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 456,
+      "size": 458,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 186089,
+        "HTML": 186100,
         "JavaScript": 69088
       },
       "commits": 23,
@@ -650,34 +682,6 @@
       },
       "commits": 14,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/gitphoto/master/image.png"
-    },
-    {
-      "name": "issuez",
-      "description": "The quick start, full account based GitHub Issue dashboard. ",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-08-24T20:11:05Z",
-      "pushedAt": "2026-10-05T19:23:58Z",
-      "url": "https://github.com/brgjr10/issuez",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 563,
-      "openIssues": 0,
-      "license": "MIT",
-      "homepage": "https://brgjr10.github.io/issuez/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "JavaScript": 132086,
-        "CSS": 34476,
-        "Dockerfile": 2625,
-        "HTML": 1499
-      },
-      "commits": 52,
-      "readmeImage": "https://github.com/user-attachments/assets/6859a83c-9541-4a38-939b-59ef5084809f"
     },
     {
       "name": "SparrowCord",
