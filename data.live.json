@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T05:50:42.314Z",
+  "generatedAt": "2026-11-01T13:11:48.026Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -27,7 +27,7 @@
       "Zima-MCP"
     ],
     "languages": 11,
-    "lastPush": "2026-11-01T03:08:14Z",
+    "lastPush": "2026-11-01T05:50:43Z",
     "activeThisMonth": 15,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -35,7 +35,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26057541,
+      "bytes": 26057570,
       "pct": 86.5
     },
     {
@@ -333,6 +333,32 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-11-01T05:50:43Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 462,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 186129,
+        "JavaScript": 69088
+      },
+      "commits": 23,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "issuez",
       "description": "The quick start, full account based GitHub Issue dashboard. ",
       "language": "JavaScript",
@@ -359,32 +385,6 @@
       },
       "commits": 63,
       "readmeImage": "https://github.com/user-attachments/assets/6859a83c-9541-4a38-939b-59ef5084809f"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-10-31T21:25:56Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 458,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 186100,
-        "JavaScript": 69088
-      },
-      "commits": 23,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "WFProj",
