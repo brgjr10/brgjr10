@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T14:34:14.340Z",
+  "generatedAt": "2026-11-02T15:36:09.105Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -27,7 +27,7 @@
       "Zima-MCP"
     ],
     "languages": 13,
-    "lastPush": "2026-11-02T14:31:18Z",
+    "lastPush": "2026-11-02T14:51:29Z",
     "activeThisMonth": 18,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -40,7 +40,7 @@
     },
     {
       "name": "JavaScript",
-      "bytes": 1963668,
+      "bytes": 1963864,
       "pct": 6.5
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "name": "TypeScript",
-      "bytes": 354412,
+      "bytes": 352146,
       "pct": 1.2
     },
     {
@@ -159,7 +159,7 @@
       },
       {
         "end": "2026-10-26",
-        "count": 54
+        "count": 0
       },
       {
         "end": "2026-11-02",
@@ -209,7 +209,7 @@
       },
       {
         "month": "2026-07",
-        "count": 0
+        "count": 34
       },
       {
         "month": "2026-08",
@@ -343,6 +343,34 @@
       "readmeImage": "https://github.com/user-attachments/assets/79b56c19-ee06-40c3-9d17-f862cd108060"
     },
     {
+      "name": "watson-osint-linux",
+      "description": "Watson — free OSINT tool adapted for Linux: people search across public sites by nickname, email, phone or website. ",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-11-01T19:27:53Z",
+      "pushedAt": "2026-11-02T14:51:29Z",
+      "url": "https://github.com/brgjr10/watson-osint-linux",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 5096,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://watsonfind.icu",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "TypeScript": 96068,
+        "JavaScript": 19469,
+        "CSS": 4897,
+        "HTML": 2322
+      },
+      "commits": 94,
+      "readmeImage": "https://github.com/user-attachments/assets/d6633757-603a-478a-a1fb-f1dac7e73b2a"
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -350,12 +378,12 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-02T14:31:18Z",
+      "pushedAt": "2026-11-02T14:34:15Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 567,
+      "size": 636,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
@@ -366,36 +394,8 @@
         "JavaScript": 69620,
         "PowerShell": 202
       },
-      "commits": 25,
+      "commits": 26,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
-    },
-    {
-      "name": "watson-osint-linux",
-      "description": "Watson — free OSINT tool adapted for Linux: people search across public sites by nickname, email, phone or website. ",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-11-01T19:27:53Z",
-      "pushedAt": "2026-11-02T14:29:44Z",
-      "url": "https://github.com/brgjr10/watson-osint-linux",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 5073,
-      "openIssues": 0,
-      "license": "MIT",
-      "homepage": "https://watsonfind.icu",
-      "watchers": 0,
-      "hasPages": false,
-      "languages": {
-        "TypeScript": 98334,
-        "JavaScript": 19273,
-        "CSS": 4897,
-        "HTML": 2322
-      },
-      "commits": 90,
-      "readmeImage": "https://github.com/user-attachments/assets/d6633757-603a-478a-a1fb-f1dac7e73b2a"
     },
     {
       "name": "issuez",
