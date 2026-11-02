@@ -34,7 +34,7 @@ const WEEKS = 16;
 // ---------- transport ----------
 
 const headers = {
-  accept: 'application/vnd.github+json',
+  accept: 'application/vnd.github.cloak-preview+json',
   'x-github-api-version': '2022-11-28',
   'user-agent': 'brgjr10-profile-readme'
 };
@@ -190,7 +190,18 @@ async function collect() {
     // Commits by the account author in this repo. GitHub shows a commit
     // count only when you open the repo — aggregating all of them in one
     // sortable view is depth the repo list alone does not give.
-    const commitCount = await searchCommits(`repo:${r.full_name} author:${HANDLE}`);
+    let commitCount = await searchCommits(`repo:${r.full_name} author:${HANDLE}`);
+    if (commitCount === 0 || r.fork) {
+      // Fallback for forks where search API may not index commits properly
+      try {
+        const allCommits = await api(`repos/${r.full_name}/commits`, { author: HANDLE, per_page: 100 });
+        if (Array.isArray(allCommits)) {
+          commitCount = allCommits.length;
+        }
+      } catch (e) {
+        // ignore
+      }
+    }
     // The README's cover image, so the portfolio can show a real
     // thumbnail per repo instead of a wall of text.
     const readme = await api(`repos/${r.full_name}/readme`);
