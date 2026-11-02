@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T05:49:28.677Z",
+  "generatedAt": "2026-11-02T14:11:29.344Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -17,8 +17,8 @@
   },
   "totals": {
     "publicRepos": 35,
-    "ownedRepos": 32,
-    "commits": 631,
+    "ownedRepos": 35,
+    "commits": 633,
     "stars": 4,
     "starRepos": [
       "radioapp",
@@ -26,22 +26,22 @@
       "custom-dashboard",
       "Zima-MCP"
     ],
-    "languages": 11,
-    "lastPush": "2026-11-01T21:58:58Z",
-    "activeThisMonth": 15,
+    "languages": 13,
+    "lastPush": "2026-11-02T14:08:42Z",
+    "activeThisMonth": 17,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26057570,
-      "pct": 86.5
+      "bytes": 26060374,
+      "pct": 86
     },
     {
       "name": "JavaScript",
-      "bytes": 1927354,
-      "pct": 6.4
+      "bytes": 1963278,
+      "pct": 6.5
     },
     {
       "name": "Python",
@@ -50,18 +50,23 @@
     },
     {
       "name": "CSS",
-      "bytes": 448010,
+      "bytes": 452907,
       "pct": 1.5
     },
     {
       "name": "TypeScript",
-      "bytes": 250332,
-      "pct": 0.8
+      "bytes": 354522,
+      "pct": 1.2
     },
     {
       "name": "PowerShell",
-      "bytes": 78211,
+      "bytes": 84684,
       "pct": 0.3
+    },
+    {
+      "name": "Vue",
+      "bytes": 28852,
+      "pct": 0.1
     },
     {
       "name": "Rust",
@@ -70,7 +75,7 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 11478,
+      "bytes": 12707,
       "pct": 0
     },
     {
@@ -81,6 +86,11 @@
     {
       "name": "C#",
       "bytes": 1993,
+      "pct": 0
+    },
+    {
+      "name": "SCSS",
+      "bytes": 1719,
       "pct": 0
     },
     {
@@ -153,7 +163,7 @@
       },
       {
         "end": "2026-11-02",
-        "count": 15
+        "count": 17
       }
     ],
     "months": [
@@ -215,7 +225,7 @@
       },
       {
         "month": "2026-11",
-        "count": 15
+        "count": 17
       }
     ]
   },
@@ -340,23 +350,52 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-01T21:58:58Z",
+      "pushedAt": "2026-11-02T14:08:42Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 565,
+      "size": 567,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 186129,
-        "JavaScript": 69088
+        "HTML": 186130,
+        "JavaScript": 69230,
+        "PowerShell": 202
       },
-      "commits": 23,
+      "commits": 24,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
+      "name": "watson-osint-linux",
+      "description": "Watson — free OSINT tool adapted for Linux: people search across public sites by nickname, email, phone or website. ",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-11-01T19:27:53Z",
+      "pushedAt": "2026-11-02T13:42:55Z",
+      "url": "https://github.com/brgjr10/watson-osint-linux",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 5073,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://watsonfind.icu",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "TypeScript": 98444,
+        "JavaScript": 19273,
+        "CSS": 4897,
+        "HTML": 2322
+      },
+      "commits": 0,
+      "readmeImage": "https://github.com/user-attachments/assets/d6633757-603a-478a-a1fb-f1dac7e73b2a"
     },
     {
       "name": "issuez",
@@ -1063,6 +1102,63 @@
       },
       "commits": 4,
       "readmeImage": "https://github.com/user-attachments/assets/0eb34642-4ecf-4235-9bbb-f35bf1774e3e"
+    },
+    {
+      "name": "kaleidosync-docker",
+      "description": "Fork of zachwinter/kaleidosync, containerized for Docker with Spotify OAuth fixes and audio-analysis-backed now-playing.",
+      "language": "Vue",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-07-25T10:14:02Z",
+      "pushedAt": "2026-08-25T16:59:58Z",
+      "url": "https://github.com/brgjr10/kaleidosync-docker",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 21623,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Vue": 28852,
+        "JavaScript": 12184,
+        "TypeScript": 5746,
+        "SCSS": 1719,
+        "HTML": 481,
+        "Dockerfile": 319
+      },
+      "commits": 0,
+      "readmeImage": "https://github.com/user-attachments/assets/a56e54ff-d1d8-488f-9c28-d0aba705ab09"
+    },
+    {
+      "name": "codebase-memory-mcp-dockerfiles",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies. Includes Dockerfiles and compose configs for the forked MCP service.",
+      "language": "PowerShell",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-08-02T20:10:37Z",
+      "pushedAt": "2026-08-21T00:35:10Z",
+      "url": "https://github.com/brgjr10/codebase-memory-mcp-dockerfiles",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "master",
+      "size": 71,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://deusdata.github.io/codebase-memory-mcp/",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "PowerShell": 6271,
+        "JavaScript": 4325,
+        "Dockerfile": 910
+      },
+      "commits": 0,
+      "readmeImage": "https://github.com/user-attachments/assets/d94f08c2-849f-4871-b5f2-720b85e8cfb5"
     },
     {
       "name": "brgjr10.github.io",
