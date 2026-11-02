@@ -169,7 +169,7 @@ async function collect() {
       sort: 'pushed'
     });
     if (!batch || !batch.length) break;
-    owned.push(...batch.filter((r) => !r.fork));
+    owned.push(...batch.filter((r) => true)); // include forks
     if (batch.length < 100) break;
   }
   const ownedCount = owned.length;
