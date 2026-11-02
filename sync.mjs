@@ -79,8 +79,13 @@ async function searchCommits(q) {
   const wait = lastSearch + floor - Date.now();
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
   lastSearch = Date.now();
-  const res = await api('search/commits', { q, per_page: 1 });
-  return res ? res.total_count : 0;
+  try {
+    const res = await api('search/commits', { q, per_page: 1 });
+    return res ? res.total_count : 0;
+  } catch (err) {
+    console.warn(`search/commits failed for ${q}: ${err.message} — using 0`);
+    return 0;
+  }
 }
 
 const iso = (d) => d.toISOString().slice(0, 10);
