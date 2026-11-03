@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:55:02.372Z",
+  "generatedAt": "2026-11-03T14:02:45.784Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -27,7 +27,7 @@
       "custom-dashboard"
     ],
     "languages": 13,
-    "lastPush": "2026-11-02T21:53:10Z",
+    "lastPush": "2026-11-03T00:55:04Z",
     "activeThisMonth": 79,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -35,7 +35,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26064194,
+      "bytes": 26064172,
       "pct": 85.9
     },
     {
@@ -343,6 +343,33 @@
       "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-11-03T00:55:04Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 698,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 188510,
+        "JavaScript": 69620,
+        "PowerShell": 202
+      },
+      "commits": 26,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "watson-osint-linux",
       "description": "Watson — free OSINT tool adapted for Linux: people search across public sites by nickname, email, phone or website. ",
       "language": "TypeScript",
@@ -426,33 +453,6 @@
       },
       "commits": 74,
       "readmeImage": "https://github.com/user-attachments/assets/0ffa7048-7c39-4806-b282-656ca42b9e29"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-02T15:36:10Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 692,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 188532,
-        "JavaScript": 69620,
-        "PowerShell": 202
-      },
-      "commits": 26,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "issuez",
