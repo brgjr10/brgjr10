@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:01:28.224Z",
+  "generatedAt": "2026-11-09T16:01:00.985Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -13,13 +13,13 @@
     "createdAt": "2025-09-13T23:57:15Z",
     "followers": 1,
     "following": 0,
-    "publicRepos": 35
+    "publicRepos": 36
   },
   "totals": {
-    "publicRepos": 35,
-    "ownedRepos": 35,
+    "publicRepos": 36,
+    "ownedRepos": 36,
     "commits": 695,
-    "stars": 5,
+    "stars": 6,
     "starRepos": [
       "watson-osint-linux",
       "Zima-MCP",
@@ -28,7 +28,7 @@
       "custom-dashboard"
     ],
     "languages": 13,
-    "lastPush": "2026-11-08T21:58:52Z",
+    "lastPush": "2026-11-09T15:52:51Z",
     "activeThisMonth": 79,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -36,28 +36,28 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26064194,
-      "pct": 85.9
+      "bytes": 26076802,
+      "pct": 85.3
     },
     {
       "name": "JavaScript",
       "bytes": 1991313,
-      "pct": 6.6
+      "pct": 6.5
     },
     {
       "name": "Python",
-      "bytes": 1338113,
+      "bytes": 1345050,
       "pct": 4.4
+    },
+    {
+      "name": "TypeScript",
+      "bytes": 513691,
+      "pct": 1.7
     },
     {
       "name": "CSS",
       "bytes": 453525,
       "pct": 1.5
-    },
-    {
-      "name": "TypeScript",
-      "bytes": 348779,
-      "pct": 1.1
     },
     {
       "name": "PowerShell",
@@ -70,13 +70,18 @@
       "pct": 0.1
     },
     {
+      "name": "SCSS",
+      "bytes": 25170,
+      "pct": 0.1
+    },
+    {
       "name": "Rust",
       "bytes": 16537,
       "pct": 0.1
     },
     {
       "name": "Dockerfile",
-      "bytes": 12707,
+      "bytes": 13232,
       "pct": 0
     },
     {
@@ -87,11 +92,6 @@
     {
       "name": "C#",
       "bytes": 1993,
-      "pct": 0
-    },
-    {
-      "name": "SCSS",
-      "bytes": 1719,
       "pct": 0
     },
     {
@@ -235,7 +235,7 @@
       "name": "watson-osint-linux",
       "description": "Watson — free OSINT tool adapted for Linux: people search across public sites by nickname, email, phone or website. ",
       "language": "TypeScript",
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "topics": [],
       "createdAt": "2026-11-01T19:27:53Z",
@@ -248,7 +248,7 @@
       "openIssues": 0,
       "license": "MIT",
       "homepage": "",
-      "watchers": 1,
+      "watchers": 2,
       "hasPages": false,
       "languages": {
         "TypeScript": 92701,
@@ -372,6 +372,35 @@
       "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
+      "name": "plane-tracker",
+      "description": "Plane Tracker is an flight tracking and air traffic simulation platform built with Angular, Google Maps, Three.js & Custom Shaders.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-11-09T08:06:30Z",
+      "pushedAt": "2026-11-09T15:52:51Z",
+      "url": "https://github.com/brgjr10/plane-tracker",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 11657,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "TypeScript": 164912,
+        "SCSS": 23451,
+        "HTML": 12608,
+        "Python": 6937,
+        "Dockerfile": 525
+      },
+      "commits": 10,
+      "readmeImage": "https://github.com/user-attachments/assets/b04b9938-d32e-439c-9cc8-e451e868a2b8"
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -379,12 +408,12 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-08T21:58:52Z",
+      "pushedAt": "2026-11-09T06:01:32Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1132,
+      "size": 1134,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
