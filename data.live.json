@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T23:10:56.865Z",
+  "generatedAt": "2026-11-11T05:57:23.754Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -13,12 +13,12 @@
     "createdAt": "2025-09-13T23:57:15Z",
     "followers": 1,
     "following": 0,
-    "publicRepos": 36
+    "publicRepos": 37
   },
   "totals": {
-    "publicRepos": 36,
-    "ownedRepos": 36,
-    "commits": 695,
+    "publicRepos": 37,
+    "ownedRepos": 37,
+    "commits": 733,
     "stars": 6,
     "starRepos": [
       "watson-osint-linux",
@@ -28,30 +28,30 @@
       "custom-dashboard"
     ],
     "languages": 13,
-    "lastPush": "2026-11-10T23:01:46Z",
-    "activeThisMonth": 79,
+    "lastPush": "2026-11-11T05:14:29Z",
+    "activeThisMonth": 117,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26079533,
-      "pct": 85.3
+      "bytes": 26082055,
+      "pct": 85.2
     },
     {
       "name": "JavaScript",
-      "bytes": 1991313,
+      "bytes": 1999829,
       "pct": 6.5
     },
     {
       "name": "Python",
-      "bytes": 1354752,
-      "pct": 4.4
+      "bytes": 1379329,
+      "pct": 4.5
     },
     {
       "name": "TypeScript",
-      "bytes": 531534,
+      "bytes": 534929,
       "pct": 1.7
     },
     {
@@ -96,75 +96,75 @@
     },
     {
       "name": "Shell",
-      "bytes": 276,
+      "bytes": 364,
       "pct": 0
     }
   ],
   "activity": {
     "weeks": [
       {
-        "end": "2026-07-28",
-        "count": 12
+        "end": "2026-07-29",
+        "count": 0
       },
       {
-        "end": "2026-08-04",
+        "end": "2026-08-05",
         "count": 40
       },
       {
-        "end": "2026-08-11",
+        "end": "2026-08-12",
         "count": 3
       },
       {
-        "end": "2026-08-18",
+        "end": "2026-08-19",
         "count": 0
       },
       {
-        "end": "2026-08-25",
+        "end": "2026-08-26",
         "count": 93
       },
       {
-        "end": "2026-09-01",
+        "end": "2026-09-02",
         "count": 6
       },
       {
-        "end": "2026-09-08",
+        "end": "2026-09-09",
         "count": 0
       },
       {
-        "end": "2026-09-15",
+        "end": "2026-09-16",
         "count": 0
       },
       {
-        "end": "2026-09-22",
+        "end": "2026-09-23",
         "count": 0
       },
       {
-        "end": "2026-09-29",
-        "count": 42
+        "end": "2026-09-30",
+        "count": 53
       },
       {
-        "end": "2026-10-06",
-        "count": 152
+        "end": "2026-10-07",
+        "count": 145
       },
       {
-        "end": "2026-10-13",
-        "count": 44
+        "end": "2026-10-14",
+        "count": 89
       },
       {
-        "end": "2026-10-20",
-        "count": 69
+        "end": "2026-10-21",
+        "count": 25
       },
       {
-        "end": "2026-10-27",
-        "count": 39
+        "end": "2026-10-28",
+        "count": 34
       },
       {
-        "end": "2026-11-03",
+        "end": "2026-11-04",
         "count": 79
       },
       {
-        "end": "2026-11-10",
-        "count": 0
+        "end": "2026-11-11",
+        "count": 38
       }
     ],
     "months": [
@@ -226,7 +226,7 @@
       },
       {
         "month": "2026-11",
-        "count": 79
+        "count": 117
       }
     ]
   },
@@ -379,26 +379,80 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-11-09T08:06:30Z",
-      "pushedAt": "2026-11-10T23:01:46Z",
+      "pushedAt": "2026-11-11T05:14:29Z",
       "url": "https://github.com/brgjr10/plane-tracker",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 11737,
+      "size": 160099,
       "openIssues": 0,
       "license": "",
       "homepage": "",
       "watchers": 0,
       "hasPages": false,
       "languages": {
-        "TypeScript": 182755,
+        "TypeScript": 186150,
         "SCSS": 26098,
         "Python": 16639,
         "HTML": 14649,
         "Dockerfile": 525
       },
-      "commits": 55,
+      "commits": 59,
       "readmeImage": "https://github.com/user-attachments/assets/b04b9938-d32e-439c-9cc8-e451e868a2b8"
+    },
+    {
+      "name": "kilo-config-management",
+      "description": "",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-11-11T03:11:51Z",
+      "pushedAt": "2026-11-11T04:46:40Z",
+      "url": "https://github.com/brgjr10/kilo-config-management",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 10384,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "Python": 24577,
+        "Shell": 88
+      },
+      "commits": 33,
+      "readmeImage": ""
+    },
+    {
+      "name": "youtube-deskop",
+      "description": "A native YouTube player for Windows & Linux built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T18:37:02Z",
+      "pushedAt": "2026-11-11T03:04:22Z",
+      "url": "https://github.com/brgjr10/youtube-deskop",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 381,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "CSS": 69464,
+        "JavaScript": 52553,
+        "Python": 17269,
+        "HTML": 2521
+      },
+      "commits": 36,
+      "readmeImage": "https://github.com/user-attachments/assets/446209c0-cef3-4105-8cd4-fcf88c6c2dd6"
     },
     {
       "name": "brgjr10",
@@ -408,19 +462,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-10T14:47:25Z",
+      "pushedAt": "2026-11-10T23:10:58Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1200,
+      "size": 1255,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 189222,
+        "HTML": 189223,
         "JavaScript": 69620,
         "PowerShell": 202
       },
@@ -565,33 +619,6 @@
       },
       "commits": 7,
       "readmeImage": ""
-    },
-    {
-      "name": "youtube-deskop",
-      "description": "A native YouTube player for Windows & Linux built on Electron, wrapped in an iOS 27 Liquid Glass interface.",
-      "language": "CSS",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T18:37:02Z",
-      "pushedAt": "2026-10-21T00:08:11Z",
-      "url": "https://github.com/brgjr10/youtube-deskop",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 357,
-      "openIssues": 0,
-      "license": "MIT",
-      "homepage": "",
-      "watchers": 0,
-      "hasPages": false,
-      "languages": {
-        "CSS": 69464,
-        "JavaScript": 44037,
-        "Python": 17269
-      },
-      "commits": 31,
-      "readmeImage": "https://github.com/user-attachments/assets/446209c0-cef3-4105-8cd4-fcf88c6c2dd6"
     },
     {
       "name": "dispo-deals",
