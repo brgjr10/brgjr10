@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T00:31:46.882Z",
+  "generatedAt": "2026-11-12T15:03:23.555Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -28,15 +28,15 @@
       "custom-dashboard"
     ],
     "languages": 13,
-    "lastPush": "2026-11-11T21:19:52Z",
-    "activeThisMonth": 127,
+    "lastPush": "2026-11-12T00:31:48Z",
+    "activeThisMonth": 0,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26085958,
+      "bytes": 26085956,
       "pct": 85
     },
     {
@@ -226,7 +226,7 @@
       },
       {
         "month": "2026-11",
-        "count": 127
+        "count": 0
       }
     ]
   },
@@ -372,6 +372,33 @@
       "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-11-12T00:31:48Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 1325,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 189832,
+        "JavaScript": 69620,
+        "PowerShell": 202
+      },
+      "commits": 26,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "kilo-config-management",
       "description": "Desktop GUI for managing Kilo Code's MCP servers, skills, and permissions. ",
       "language": "Python",
@@ -396,33 +423,6 @@
       },
       "commits": 43,
       "readmeImage": "https://github.com/user-attachments/assets/277b7790-4c88-4987-8808-8b7355cb038a"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-11T14:02:51Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 1322,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 189834,
-        "JavaScript": 69620,
-        "PowerShell": 202
-      },
-      "commits": 26,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "plane-tracker",
