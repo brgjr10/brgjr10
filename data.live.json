@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T06:10:20.409Z",
+  "generatedAt": "2026-11-16T21:57:34.978Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 38,
     "ownedRepos": 38,
-    "commits": 746,
+    "commits": 769,
     "stars": 6,
     "starRepos": [
       "watson-osint-linux",
@@ -28,20 +28,20 @@
       "custom-dashboard"
     ],
     "languages": 14,
-    "lastPush": "2026-11-16T05:44:35Z",
-    "activeThisMonth": 130,
+    "lastPush": "2026-11-16T21:52:09Z",
+    "activeThisMonth": 153,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26098728,
-      "pct": 82.2
+      "bytes": 26229580,
+      "pct": 82.3
     },
     {
       "name": "JavaScript",
-      "bytes": 3023766,
+      "bytes": 3024278,
       "pct": 9.5
     },
     {
@@ -169,7 +169,7 @@
       },
       {
         "end": "2026-11-16",
-        "count": 51
+        "count": 74
       }
     ],
     "months": [
@@ -231,7 +231,7 @@
       },
       {
         "month": "2026-11",
-        "count": 130
+        "count": 153
       }
     ]
   },
@@ -384,24 +384,24 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-11-16T05:20:26Z",
-      "pushedAt": "2026-11-16T05:44:35Z",
+      "pushedAt": "2026-11-16T21:52:09Z",
       "url": "https://github.com/brgjr10/kaleidosync",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 0,
+      "size": 21347,
       "openIssues": 0,
-      "license": "",
-      "homepage": "",
+      "license": "MIT",
+      "homepage": "https://brgjr10.github.io/kaleidosync/",
       "watchers": 0,
-      "hasPages": false,
+      "hasPages": true,
       "languages": {
-        "JavaScript": 1023937,
+        "JavaScript": 1024449,
+        "HTML": 142855,
         "Python": 30369,
-        "HTML": 12769,
         "GLSL": 2019
       },
-      "commits": 3,
+      "commits": 26,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/kaleidosync/main/logo.png"
     },
     {
@@ -412,19 +412,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-15T18:47:16Z",
+      "pushedAt": "2026-11-16T06:10:23Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1660,
+      "size": 1669,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 189835,
+        "HTML": 190601,
         "JavaScript": 69620,
         "PowerShell": 202
       },
@@ -1204,7 +1204,7 @@
       "pushedAt": "2026-08-25T16:59:58Z",
       "url": "https://github.com/brgjr10/kaleidosync-docker",
       "private": false,
-      "archived": false,
+      "archived": true,
       "defaultBranch": "main",
       "size": 21623,
       "openIssues": 0,
