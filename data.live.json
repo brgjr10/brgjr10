@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T21:57:34.978Z",
+  "generatedAt": "2026-11-17T07:46:04.963Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -18,7 +18,7 @@
   "totals": {
     "publicRepos": 38,
     "ownedRepos": 38,
-    "commits": 769,
+    "commits": 784,
     "stars": 6,
     "starRepos": [
       "watson-osint-linux",
@@ -27,27 +27,27 @@
       "satellite-app",
       "custom-dashboard"
     ],
-    "languages": 14,
-    "lastPush": "2026-11-16T21:52:09Z",
-    "activeThisMonth": 153,
-    "peakMonth": "2026-10",
-    "peakMonthCommits": 293
+    "languages": 15,
+    "lastPush": "2026-11-17T03:49:40Z",
+    "activeThisMonth": 0,
+    "peakMonth": "2026-08",
+    "peakMonthCommits": 142
   },
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26229580,
-      "pct": 82.3
+      "bytes": 26231173,
+      "pct": 82.1
     },
     {
       "name": "JavaScript",
-      "bytes": 3024278,
-      "pct": 9.5
+      "bytes": 3079114,
+      "pct": 9.6
     },
     {
       "name": "Python",
-      "bytes": 1450828,
-      "pct": 4.6
+      "bytes": 1420459,
+      "pct": 4.4
     },
     {
       "name": "TypeScript",
@@ -61,7 +61,7 @@
     },
     {
       "name": "PowerShell",
-      "bytes": 84684,
+      "bytes": 91736,
       "pct": 0.3
     },
     {
@@ -75,9 +75,19 @@
       "pct": 0.1
     },
     {
+      "name": "C",
+      "bytes": 24989,
+      "pct": 0.1
+    },
+    {
       "name": "Rust",
       "bytes": 16537,
       "pct": 0.1
+    },
+    {
+      "name": "Swift",
+      "bytes": 13546,
+      "pct": 0
     },
     {
       "name": "Dockerfile",
@@ -90,86 +100,81 @@
       "pct": 0
     },
     {
-      "name": "GLSL",
-      "bytes": 2019,
-      "pct": 0
-    },
-    {
       "name": "C#",
       "bytes": 1993,
       "pct": 0
     },
     {
       "name": "Shell",
-      "bytes": 364,
+      "bytes": 1621,
       "pct": 0
     }
   ],
   "activity": {
     "weeks": [
       {
-        "end": "2026-08-03",
+        "end": "2026-08-04",
         "count": 40
       },
       {
-        "end": "2026-08-10",
-        "count": 0
-      },
-      {
-        "end": "2026-08-17",
+        "end": "2026-08-11",
         "count": 3
       },
       {
-        "end": "2026-08-24",
-        "count": 68
-      },
-      {
-        "end": "2026-08-31",
-        "count": 31
-      },
-      {
-        "end": "2026-09-07",
+        "end": "2026-08-18",
         "count": 0
       },
       {
-        "end": "2026-09-14",
+        "end": "2026-08-25",
+        "count": 93
+      },
+      {
+        "end": "2026-09-01",
+        "count": 6
+      },
+      {
+        "end": "2026-09-08",
         "count": 0
       },
       {
-        "end": "2026-09-21",
+        "end": "2026-09-15",
         "count": 0
       },
       {
-        "end": "2026-09-28",
-        "count": 23
+        "end": "2026-09-22",
+        "count": 0
       },
       {
-        "end": "2026-10-05",
-        "count": 155
+        "end": "2026-09-29",
+        "count": 42
       },
       {
-        "end": "2026-10-12",
-        "count": 51
+        "end": "2026-10-06",
+        "count": 152
       },
       {
-        "end": "2026-10-19",
-        "count": 63
+        "end": "2026-10-13",
+        "count": 44
       },
       {
-        "end": "2026-10-26",
-        "count": 54
+        "end": "2026-10-20",
+        "count": 69
       },
       {
-        "end": "2026-11-02",
+        "end": "2026-10-27",
+        "count": 39
+      },
+      {
+        "end": "2026-11-03",
         "count": 79
       },
       {
-        "end": "2026-11-09",
+        "end": "2026-11-10",
         "count": 0
       },
       {
-        "end": "2026-11-16",
-        "count": 74
+        "end": "2026-11-17",
+        "count": 89
       }
     ],
     "months": [
@@ -223,15 +228,15 @@
       },
       {
         "month": "2026-09",
-        "count": 53
+        "count": 0
       },
       {
         "month": "2026-10",
-        "count": 293
+        "count": 0
       },
       {
         "month": "2026-11",
-        "count": 153
+        "count": 0
       }
     ]
   },
@@ -378,30 +383,39 @@
     },
     {
       "name": "kaleidosync",
-      "description": "Standalone desktop app that renders 50 Kaleidosync visualizers synced to system audio (Spotify, browser, any audio source) via OS loopback capture — no Spotify API, tokens, or DOM tapping required.",
+      "description": "Universal, standalone desktop app that renders 50 visualizers synced in real-time to any preferred music source. ",
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "topics": [],
+      "topics": [
+        "audio-visualization",
+        "javascript",
+        "music-visualizer",
+        "spotify",
+        "threejs",
+        "webgl"
+      ],
       "createdAt": "2026-11-16T05:20:26Z",
-      "pushedAt": "2026-11-16T21:52:09Z",
+      "pushedAt": "2026-11-17T03:49:40Z",
       "url": "https://github.com/brgjr10/kaleidosync",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 21347,
+      "size": 22126,
       "openIssues": 0,
       "license": "MIT",
       "homepage": "https://brgjr10.github.io/kaleidosync/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "JavaScript": 1024449,
-        "HTML": 142855,
-        "Python": 30369,
-        "GLSL": 2019
+        "JavaScript": 1079285,
+        "HTML": 144405,
+        "C": 24989,
+        "Swift": 13546,
+        "PowerShell": 7052,
+        "Shell": 1257
       },
-      "commits": 26,
+      "commits": 41,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/kaleidosync/main/logo.png"
     },
     {
@@ -412,19 +426,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-16T06:10:23Z",
+      "pushedAt": "2026-11-16T21:57:36Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 1669,
+      "size": 1672,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 190601,
+        "HTML": 190644,
         "JavaScript": 69620,
         "PowerShell": 202
       },
