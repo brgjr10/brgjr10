@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T07:01:00.746Z",
+  "generatedAt": "2026-11-20T20:00:02.740Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -28,7 +28,7 @@
       "custom-dashboard"
     ],
     "languages": 15,
-    "lastPush": "2026-11-20T00:38:15Z",
+    "lastPush": "2026-11-20T07:01:02Z",
     "activeThisMonth": 238,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -36,7 +36,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26260917,
+      "bytes": 26260914,
       "pct": 82
     },
     {
@@ -158,7 +158,7 @@
       },
       {
         "end": "2026-10-23",
-        "count": 0
+        "count": 25
       },
       {
         "end": "2026-10-30",
@@ -220,11 +220,11 @@
       },
       {
         "month": "2026-07",
-        "count": 0
+        "count": 34
       },
       {
         "month": "2026-08",
-        "count": 0
+        "count": 142
       },
       {
         "month": "2026-09",
@@ -382,6 +382,33 @@
       "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-11-20T07:01:02Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 1804,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 190710,
+        "JavaScript": 69620,
+        "PowerShell": 202
+      },
+      "commits": 26,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "kaleidosync",
       "description": "Universal, standalone desktop app that renders 50 visualizers synced in real-time to any preferred music source. ",
       "language": "JavaScript",
@@ -417,33 +444,6 @@
       },
       "commits": 111,
       "readmeImage": "https://raw.githubusercontent.com/brgjr10/kaleidosync/main/logo.png"
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-19T20:29:11Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 1746,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 190713,
-        "JavaScript": 69620,
-        "PowerShell": 202
-      },
-      "commits": 26,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "kilo-config-management",
