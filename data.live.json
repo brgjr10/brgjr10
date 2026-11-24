@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T23:47:59.054Z",
+  "generatedAt": "2026-11-24T09:43:26.928Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -28,7 +28,7 @@
       "custom-dashboard"
     ],
     "languages": 15,
-    "lastPush": "2026-11-23T07:23:03Z",
+    "lastPush": "2026-11-23T23:48:00Z",
     "activeThisMonth": 238,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -36,7 +36,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26260915,
+      "bytes": 26260917,
       "pct": 82
     },
     {
@@ -113,68 +113,68 @@
   "activity": {
     "weeks": [
       {
-        "end": "2026-08-10",
-        "count": 0
-      },
-      {
-        "end": "2026-08-17",
+        "end": "2026-08-11",
         "count": 3
       },
       {
-        "end": "2026-08-24",
-        "count": 68
-      },
-      {
-        "end": "2026-08-31",
-        "count": 31
-      },
-      {
-        "end": "2026-09-07",
+        "end": "2026-08-18",
         "count": 0
       },
       {
-        "end": "2026-09-14",
+        "end": "2026-08-25",
+        "count": 93
+      },
+      {
+        "end": "2026-09-01",
+        "count": 6
+      },
+      {
+        "end": "2026-09-08",
         "count": 0
       },
       {
-        "end": "2026-09-21",
+        "end": "2026-09-15",
         "count": 0
       },
       {
-        "end": "2026-09-28",
+        "end": "2026-09-22",
+        "count": 0
+      },
+      {
+        "end": "2026-09-29",
+        "count": 42
+      },
+      {
+        "end": "2026-10-06",
+        "count": 152
+      },
+      {
+        "end": "2026-10-13",
+        "count": 44
+      },
+      {
+        "end": "2026-10-20",
+        "count": 69
+      },
+      {
+        "end": "2026-10-27",
+        "count": 39
+      },
+      {
+        "end": "2026-11-03",
+        "count": 79
+      },
+      {
+        "end": "2026-11-10",
+        "count": 0
+      },
+      {
+        "end": "2026-11-17",
+        "count": 136
+      },
+      {
+        "end": "2026-11-24",
         "count": 23
-      },
-      {
-        "end": "2026-10-05",
-        "count": 155
-      },
-      {
-        "end": "2026-10-12",
-        "count": 51
-      },
-      {
-        "end": "2026-10-19",
-        "count": 63
-      },
-      {
-        "end": "2026-10-26",
-        "count": 54
-      },
-      {
-        "end": "2026-11-02",
-        "count": 79
-      },
-      {
-        "end": "2026-11-09",
-        "count": 0
-      },
-      {
-        "end": "2026-11-16",
-        "count": 80
-      },
-      {
-        "end": "2026-11-23",
-        "count": 79
       }
     ],
     "months": [
@@ -389,19 +389,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-23T07:23:03Z",
+      "pushedAt": "2026-11-23T23:48:00Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 591,
+      "size": 594,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 190711,
+        "HTML": 190713,
         "JavaScript": 69620,
         "PowerShell": 202
       },
