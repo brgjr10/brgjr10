@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:16:12.494Z",
+  "generatedAt": "2026-11-25T21:36:50.480Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -28,7 +28,7 @@
       "custom-dashboard"
     ],
     "languages": 16,
-    "lastPush": "2026-11-25T00:40:49Z",
+    "lastPush": "2026-11-25T21:23:17Z",
     "activeThisMonth": 238,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -36,17 +36,17 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26263972,
+      "bytes": 26264751,
       "pct": 64.2
     },
     {
       "name": "TypeScript",
-      "bytes": 5469606,
+      "bytes": 5471140,
       "pct": 13.4
     },
     {
       "name": "Rust",
-      "bytes": 3755030,
+      "bytes": 3757609,
       "pct": 9.2
     },
     {
@@ -163,7 +163,7 @@
       },
       {
         "end": "2026-10-28",
-        "count": 0
+        "count": 34
       },
       {
         "end": "2026-11-04",
@@ -225,11 +225,11 @@
       },
       {
         "month": "2026-07",
-        "count": 0
+        "count": 34
       },
       {
         "month": "2026-08",
-        "count": 0
+        "count": 142
       },
       {
         "month": "2026-09",
@@ -389,25 +389,25 @@
     {
       "name": "kvistcode",
       "description": "Command center for AI coding agents: Claude, ChatGPT (Codex) and Grok side by side in one cross-platform desktop app.",
-      "language": "",
+      "language": "TypeScript",
       "stars": 0,
       "forks": 0,
       "topics": [],
       "createdAt": "2026-11-25T07:51:23Z",
-      "pushedAt": "2026-11-25T00:40:49Z",
+      "pushedAt": "2026-11-25T21:23:17Z",
       "url": "https://github.com/brgjr10/kvistcode",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 15677,
+      "size": 16295,
       "openIssues": 0,
       "license": "MIT",
       "homepage": "https://kvistcode.com",
       "watchers": 0,
       "hasPages": false,
       "languages": {
-        "TypeScript": 4928319,
-        "Rust": 3738493,
+        "TypeScript": 4929853,
+        "Rust": 3741072,
         "Python": 85286,
         "CSS": 79047,
         "JavaScript": 34228,
@@ -426,19 +426,19 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-24T22:19:44Z",
+      "pushedAt": "2026-11-25T08:16:13Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 653,
+      "size": 711,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
       "watchers": 0,
       "hasPages": true,
       "languages": {
-        "HTML": 190713,
+        "HTML": 191492,
         "JavaScript": 69620,
         "PowerShell": 202
       },
