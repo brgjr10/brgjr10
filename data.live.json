@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T22:19:43.242Z",
+  "generatedAt": "2026-11-25T08:16:12.494Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -13,11 +13,11 @@
     "createdAt": "2025-09-13T23:57:15Z",
     "followers": 1,
     "following": 0,
-    "publicRepos": 38
+    "publicRepos": 39
   },
   "totals": {
-    "publicRepos": 38,
-    "ownedRepos": 38,
+    "publicRepos": 39,
+    "ownedRepos": 39,
     "commits": 854,
     "stars": 6,
     "starRepos": [
@@ -27,8 +27,8 @@
       "satellite-app",
       "custom-dashboard"
     ],
-    "languages": 15,
-    "lastPush": "2026-11-24T09:43:28Z",
+    "languages": 16,
+    "lastPush": "2026-11-25T00:40:49Z",
     "activeThisMonth": 238,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -36,33 +36,38 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26260917,
-      "pct": 82
-    },
-    {
-      "name": "JavaScript",
-      "bytes": 3130748,
-      "pct": 9.8
-    },
-    {
-      "name": "Python",
-      "bytes": 1420459,
-      "pct": 4.4
+      "bytes": 26263972,
+      "pct": 64.2
     },
     {
       "name": "TypeScript",
-      "bytes": 541287,
-      "pct": 1.7
+      "bytes": 5469606,
+      "pct": 13.4
+    },
+    {
+      "name": "Rust",
+      "bytes": 3755030,
+      "pct": 9.2
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 3164976,
+      "pct": 7.7
+    },
+    {
+      "name": "Python",
+      "bytes": 1505745,
+      "pct": 3.7
     },
     {
       "name": "CSS",
-      "bytes": 453525,
-      "pct": 1.4
+      "bytes": 532572,
+      "pct": 1.3
     },
     {
       "name": "PowerShell",
       "bytes": 91736,
-      "pct": 0.3
+      "pct": 0.2
     },
     {
       "name": "SCSS",
@@ -77,11 +82,6 @@
     {
       "name": "C",
       "bytes": 24989,
-      "pct": 0.1
-    },
-    {
-      "name": "Rust",
-      "bytes": 16537,
       "pct": 0.1
     },
     {
@@ -100,81 +100,86 @@
       "pct": 0
     },
     {
-      "name": "C#",
-      "bytes": 1993,
+      "name": "Shell",
+      "bytes": 3169,
       "pct": 0
     },
     {
-      "name": "Shell",
-      "bytes": 1621,
+      "name": "NSIS",
+      "bytes": 2544,
+      "pct": 0
+    },
+    {
+      "name": "C#",
+      "bytes": 1993,
       "pct": 0
     }
   ],
   "activity": {
     "weeks": [
       {
-        "end": "2026-08-11",
+        "end": "2026-08-12",
         "count": 3
       },
       {
-        "end": "2026-08-18",
+        "end": "2026-08-19",
         "count": 0
       },
       {
-        "end": "2026-08-25",
+        "end": "2026-08-26",
         "count": 93
       },
       {
-        "end": "2026-09-01",
+        "end": "2026-09-02",
         "count": 6
       },
       {
-        "end": "2026-09-08",
+        "end": "2026-09-09",
         "count": 0
       },
       {
-        "end": "2026-09-15",
+        "end": "2026-09-16",
         "count": 0
       },
       {
-        "end": "2026-09-22",
+        "end": "2026-09-23",
         "count": 0
       },
       {
-        "end": "2026-09-29",
-        "count": 42
+        "end": "2026-09-30",
+        "count": 53
       },
       {
-        "end": "2026-10-06",
-        "count": 152
+        "end": "2026-10-07",
+        "count": 145
       },
       {
-        "end": "2026-10-13",
-        "count": 44
+        "end": "2026-10-14",
+        "count": 89
       },
       {
-        "end": "2026-10-20",
-        "count": 69
+        "end": "2026-10-21",
+        "count": 25
       },
       {
-        "end": "2026-10-27",
-        "count": 39
+        "end": "2026-10-28",
+        "count": 0
       },
       {
-        "end": "2026-11-03",
+        "end": "2026-11-04",
         "count": 79
       },
       {
-        "end": "2026-11-10",
-        "count": 0
+        "end": "2026-11-11",
+        "count": 48
       },
       {
-        "end": "2026-11-17",
-        "count": 136
+        "end": "2026-11-18",
+        "count": 90
       },
       {
-        "end": "2026-11-24",
-        "count": 23
+        "end": "2026-11-25",
+        "count": 21
       }
     ],
     "months": [
@@ -220,11 +225,11 @@
       },
       {
         "month": "2026-07",
-        "count": 34
+        "count": 0
       },
       {
         "month": "2026-08",
-        "count": 142
+        "count": 0
       },
       {
         "month": "2026-09",
@@ -382,6 +387,38 @@
       "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
+      "name": "kvistcode",
+      "description": "Command center for AI coding agents: Claude, ChatGPT (Codex) and Grok side by side in one cross-platform desktop app.",
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-11-25T07:51:23Z",
+      "pushedAt": "2026-11-25T00:40:49Z",
+      "url": "https://github.com/brgjr10/kvistcode",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 15677,
+      "openIssues": 0,
+      "license": "MIT",
+      "homepage": "https://kvistcode.com",
+      "watchers": 0,
+      "hasPages": false,
+      "languages": {
+        "TypeScript": 4928319,
+        "Rust": 3738493,
+        "Python": 85286,
+        "CSS": 79047,
+        "JavaScript": 34228,
+        "HTML": 3055,
+        "NSIS": 2544,
+        "Shell": 1548
+      },
+      "commits": 0,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/kvistcode/main/apps/desktop/src-tauri/icons/icon.svg"
+    },
+    {
       "name": "brgjr10",
       "description": "GitHub Profile README",
       "language": "HTML",
@@ -389,12 +426,12 @@
       "forks": 0,
       "topics": [],
       "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-24T09:43:28Z",
+      "pushedAt": "2026-11-24T22:19:44Z",
       "url": "https://github.com/brgjr10/brgjr10",
       "private": false,
       "archived": false,
       "defaultBranch": "main",
-      "size": 597,
+      "size": 653,
       "openIssues": 0,
       "license": "",
       "homepage": "https://brgjr10.github.io/brgjr10/",
