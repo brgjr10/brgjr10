@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T08:02:35.123Z",
+  "generatedAt": "2026-11-26T21:24:46.581Z",
   "handle": "brgjr10",
   "tokenKind": "pat",
   "commitsScopedToThisRepo": false,
@@ -28,7 +28,7 @@
       "custom-dashboard"
     ],
     "languages": 16,
-    "lastPush": "2026-11-26T01:01:45Z",
+    "lastPush": "2026-11-26T08:02:36Z",
     "activeThisMonth": 242,
     "peakMonth": "2026-10",
     "peakMonthCommits": 293
@@ -36,7 +36,7 @@
   "languages": [
     {
       "name": "HTML",
-      "bytes": 26265363,
+      "bytes": 26265823,
       "pct": 64
     },
     {
@@ -387,6 +387,33 @@
       "readmeImage": "https://github.com/user-attachments/assets/900a0f16-423d-44e9-aeb9-9cb924b46b95"
     },
     {
+      "name": "brgjr10",
+      "description": "GitHub Profile README",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "createdAt": "2026-10-04T22:40:38Z",
+      "pushedAt": "2026-11-26T08:02:36Z",
+      "url": "https://github.com/brgjr10/brgjr10",
+      "private": false,
+      "archived": false,
+      "defaultBranch": "main",
+      "size": 776,
+      "openIssues": 0,
+      "license": "",
+      "homepage": "https://brgjr10.github.io/brgjr10/",
+      "watchers": 0,
+      "hasPages": true,
+      "languages": {
+        "HTML": 191968,
+        "JavaScript": 69620,
+        "PowerShell": 202
+      },
+      "commits": 26,
+      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
+    },
+    {
       "name": "radio-camera-bridge",
       "description": "",
       "language": "JavaScript",
@@ -413,33 +440,6 @@
       },
       "commits": 2,
       "readmeImage": ""
-    },
-    {
-      "name": "brgjr10",
-      "description": "GitHub Profile README",
-      "language": "HTML",
-      "stars": 0,
-      "forks": 0,
-      "topics": [],
-      "createdAt": "2026-10-04T22:40:38Z",
-      "pushedAt": "2026-11-25T21:36:51Z",
-      "url": "https://github.com/brgjr10/brgjr10",
-      "private": false,
-      "archived": false,
-      "defaultBranch": "main",
-      "size": 714,
-      "openIssues": 0,
-      "license": "",
-      "homepage": "https://brgjr10.github.io/brgjr10/",
-      "watchers": 0,
-      "hasPages": true,
-      "languages": {
-        "HTML": 191508,
-        "JavaScript": 69620,
-        "PowerShell": 202
-      },
-      "commits": 26,
-      "readmeImage": "https://raw.githubusercontent.com/brgjr10/brgjr10/main/assets/header.svg"
     },
     {
       "name": "kvistcode",
